@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Visualization & Animation",
+    "subtitle": "Hard surface modeling, game assets, and arch-viz",
+    "category": "",
+    "description": "I started out as an industrial designer, and representing ideas and forms accurately is an integral part of that work. I've been creating 3D models, rendered images, animations, game-ready assets and technical illustrations almost every day for the past decade.",
+    "model": "Animation",
+
+    "xCoord": "1",
+    "yCoord": "10.95",
+    "zCoord": "8",
+    "rotationMultiplier": "0.35",
+    "media": [
+      "./images/projects/animation/circuits.mp4",
+      "./images/projects/animation/webux.mp4"
+    ]
+  }
+]

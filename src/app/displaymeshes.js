@@ -3,89 +3,87 @@ import { gsap } from "gsap/all";
 import App from "./app.js";
 import featuredProjects from "../featured.json";
 import labProjects from "../lab.json";
+import doneProjects from "../done.json";
 
 export default class DisplayMeshes {
+  constructor() {
+    this.featuredProjects = featuredProjects;
+    this.labProjects = labProjects;
+    this.doneProjects = doneProjects;
+    this.initial = false;
 
-    constructor() {
+    this.app = new App();
+    this.models = [];
 
-        this.featuredProjects = featuredProjects;
-        this.labProjects = labProjects;
-        this.initial = false;
-        
-        this.app = new App();
-        this.models = [];
+    this.createProjects(featuredProjects);
+    this.createProjects(labProjects);
+    this.createProjects(doneProjects);
+  }
 
-        this.createProjects(featuredProjects);
-        this.createProjects(labProjects);
+  addModels() {
+    if (window.location.hash !== "#1initial" && this.initial === true) return;
 
-    }
+    this.models.forEach((each) => {
+      this.app.scene.add(each);
+      gsap.to(each.material, {
+        opacity: 1,
+        duration: 0.5,
+        onComplete: () => {
+          each.material.transparent = false;
+        },
+      });
+    });
 
-    addModels() {
+    this.initial = true;
+  }
 
-        if (window.location.hash !== "#initial" && this.initial === true) return;
+  createProjects(projectsList) {
+    projectsList.forEach((project) => {
+      let projectModel;
 
-        this.models.forEach((each) => {
-            this.app.scene.add(each);
-            gsap.to(each.material,
-                {opacity: 1, duration: 0.5, onComplete: () => { each.material.transparent = false; }
-                }
-            );
-        });
+      if (project.model !== undefined) {
+        projectModel = this.app.loaders.items[project.model].scene.children[0];
 
-        this.initial = true;
-    }
+        projectModel.material = new THREE.MeshPhongMaterial();
+        projectModel.material.envMap = this.app.loaders.items.TokyoHDRI;
+        projectModel.material.envMapIntensity = 0.25;
+        projectModel.material.reflectivity = 0.15;
+        projectModel.material.side = THREE.DoubleSide;
+        projectModel.material.transparent = true;
+        projectModel.material.opacity = 0;
 
-    createProjects(projectsList) {
+        projectModel.castShadow = true;
+        // projectModel.receiveShadow = true;
 
-        projectsList.forEach(
-            (project) => {
+        projectModel.rotateY(Math.PI * 0.5);
 
-                let projectModel;
+        projectModel.position.set(
+          project.xCoord,
+          project.yCoord,
+          project.zCoord
+        );
+      }
 
-                if (project.model !== undefined) {
-                    projectModel = this.app.loaders.items[project.model].scene.children[0];
+      if (project.diffMap) {
+        projectModel.material.map = this.app.loaders.items[project.diffMap];
+      }
 
-                    projectModel.material = new THREE.MeshPhongMaterial();
-                    projectModel.material.envMap = this.app.loaders.items.TokyoHDRI;
-                    projectModel.material.envMapIntensity = 0.25;
-                    projectModel.material.reflectivity = 0.15;
-                    projectModel.material.side = THREE.DoubleSide;
-                    projectModel.material.transparent = true;
-                    projectModel.material.opacity = 0;
+      if (project.normalMap) {
+        this.app.loaders.items[project.normalMap].encoding =
+          THREE.LinearEncoding;
+        projectModel.material.normalMap =
+          this.app.loaders.items[project.normalMap];
+        projectModel.material.normalScale = new THREE.Vector2(0.5, 0.5);
+      }
 
-                    projectModel.castShadow = true;
-                    // projectModel.receiveShadow = true;
+      // color correction
+      if (project.model === "PMIbeam") {
+        projectModel.material.color = new THREE.Color(0x4f17a8);
+      }
 
-                    projectModel.rotateY(Math.PI * 0.5);
-
-                    projectModel.position.set(project.xCoord, project.yCoord, project.zCoord);
-
-                }
-
-                if (project.diffMap) {
-                    projectModel.material.map = this.app.loaders.items[project.diffMap];
-                }
-
-                if (project.normalMap) {
-                    this.app.loaders.items[project.normalMap].encoding = THREE.LinearEncoding;
-                    projectModel.material.normalMap = this.app.loaders.items[project.normalMap];
-                    projectModel.material.normalScale = new THREE.Vector2(0.5, 0.5);
-                }
-
-                // color correction
-                if (project.model === "PMIbeam") { 
-                    projectModel.material.color = new THREE.Color(0x4F17A8);
-                }
-
-                if (projectModel !== undefined) {
-                    this.models.push(projectModel);
-                }
-
-            }
-        )
-        
-    }
-
-
-
+      if (projectModel !== undefined) {
+        this.models.push(projectModel);
+      }
+    });
+  }
 }

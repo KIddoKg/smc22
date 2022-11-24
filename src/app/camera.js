@@ -1,286 +1,304 @@
 import * as THREE from "three";
 import { gsap } from "gsap/all";
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import App from "./app.js";
 
 export default class Camera {
+  constructor() {
+    this.app = new App();
+    this.initialized = false;
 
-    constructor() {
+    this.setInstance();
+    this.setOrbitControls();
 
-        this.app = new App();
-        this.initialized = false;
+    this.views = {
+      initial: {
+        x: 65,
+        y: 2,
+        z: 40,
+        tX: 3,
+        tY: 4,
+        tZ: 6,
+        duration: 3,
+        ease: "back.out(1)",
+        hash: "#initial",
+      },
 
-        this.setInstance();
-        this.setOrbitControls();
+      main: {
+        x: 65,
+        y: 2,
+        z: 40,
+        tX: 3,
+        tY: 4,
+        tZ: 6,
+        duration: 1,
+        ease: "power3.inOut",
+        hash: "#mainmenu",
+      },
 
-        this.views = {
+      UpperGallery: {
+        x: 30,
+        y: 6.5,
+        z: 8,
+        tX: -1,
+        tY: 6.5,
+        tZ: 1,
+        duration: 1,
+        ease: "power3.inOut",
+        hash: "#lab",
+      },
 
-            initial: {
-                x: 65,
-                y: 2,
-                z: 40,
-                tX: 3,
-                tY: 4,
-                tZ: 6,
-                duration: 3,
-                ease: "back.out(1)",
-                hash: "#initial"
-            },
+      LowerGallery: {
+        x: 32,
+        y: 1,
+        z: 0,
+        tX: 1,
+        tY: 3,
+        tZ: -5,
+        duration: 1,
+        ease: "power3.inOut",
+        hash: "#work",
+      },
 
-            main: {
-                x: 65,
-                y: 2,
-                z: 40,
-                tX: 3,
-                tY: 4,
-                tZ: 6,
-                duration: 1,
-                ease: "power3.inOut",
-                hash: "#mainmenu"
-            },
+      HightGallery: {
+        x: 34,
+        y: 10,
+        z: 10,
+        tX: 1,
+        tY: 10,
+        tZ: 10,
+        duration: 1,
+        ease: "power3.inOut",
+        hash: "#done",
+      },
 
-            UpperGallery: {
-                x: 30,
-                y: 6.5,
-                z: 8,
-                tX: -1,
-                tY: 6.5,
-                tZ: 8,
-                duration: 1,
-                ease: "power3.inOut",
-                hash: "#lab"
-            },
+      Deck: {
+        x: 0.3,
+        y: 1.35,
+        z: 42,
+        tX: 0.3,
+        tY: 0.2,
+        tZ: 0,
+        duration: 1,
+        ease: "power3.inOut",
+        hash: "#about",
+      },
 
-            LowerGallery: {
-                x: 32,
-                y: 1,
-                z: 0,
-                tX: 0,
-                tY: 1,
-                tZ: 0,
-                duration: 1,
-                ease: "power3.inOut",
-                hash: "#work"
-            },
+      Parrot: {
+        x: 12,
+        y: 3.25, // 2
+        z: 1, // 0
+        tX: 8,
+        tY: 2.75, // 2
+        tZ: 1, // 0
+        duration: 1,
+        ease: "power3.inOut",
+        hash: "#googleassistant",
+      },
 
-            Deck: {
-                x: 0.3,
-                y: 1.35,
-                z: 42,
-                tX: 0.3,
-                tY: 0.2,
-                tZ: 0,
-                duration: 1,
-                ease: "power3.inOut",
-                hash: "#about"
-            },
+      // wolf: {
+      //   x: 6,
+      //   y: 2, // 1
+      //   z: 2.85, // 2.5
+      //   tX: 2,
+      //   tY: 1.25, // 1
+      //   tZ: 2.85, // 2.5
+      //   duration: 1,
+      //   ease: "power3.inOut",
+      //   hash: "#pmiawards",
+      // },
 
-            GoogleAssistantStage: {
-                x: 6,
-                y: 2, // 1
-                z: 5.35, // 5
-                tX: 2,
-                tY: 1.25, // 1
-                tZ: 5.35, // 5
-                duration: 1,
-                ease: "power3.inOut",
-                hash: "#googleassistant"
-            },
+      wolf: {
+        x: 12,
+        y: 3.25, // 2
+        z: 1, // 0
+        tX: 8,
+        tY: 2.75, // 2
+        tZ: 1, // 0
+        duration: 1,
+        ease: "power3.inOut",
+        hash: "#googleassistant",
+      },
+      GoogleIOKiosk: {
+        x: 6,
+        y: 2, // 1
+        z: 0.35, // 0
+        tX: 2,
+        tY: 1.25, // 1
+        tZ: 0.35, // 0
+        duration: 1,
+        ease: "power3.inOut",
+        hash: "#googleio",
+      },
 
-            PMIbeam: {
-                x: 6,
-                y: 2, // 1
-                z: 2.85, // 2.5
-                tX: 2,
-                tY: 1.25, // 1
-                tZ: 2.85, // 2.5
-                duration: 1,
-                ease: "power3.inOut",
-                hash: "#pmiawards"
-            },
+      PacFriend: {
+        x: 6,
+        y: 2, // 1
+        z: -2.15, // -2.5
+        tX: 2,
+        tY: 1.25, // 1
+        tZ: -2.15, // -2.5
+        duration: 1,
+        ease: "power3.inOut",
+        hash: "#pizzahut",
+      },
+      Beagle: {
+        x: 6,
+        y: 2, // 1
+        z: -2.15, // -2.5
+        tX: 2,
+        tY: 1.25, // 1
+        tZ: -2.15, // -2.5
+        duration: 1,
+        ease: "power3.inOut",
+        hash: "#beagle",
+      },
+      // Animation: {
+      //   x: 16,
+      //   y: 12, // 1
+      //   z: -12.15, // -2.5
+      //   tX: 12,
+      //   tY: 11.25, // 1
+      //   tZ: -2.15, // -2.5
+      //   duration: 1,
+      //   ease: "power3.inOut",
+      //   hash: "#animation",
+      // },
 
-            GoogleIOKiosk: {
-                x: 6,
-                y: 2, // 1
-                z: 0.35, // 0
-                tX: 2,
-                tY: 1.25, // 1
-                tZ: 0.35, // 0
-                duration: 1,
-                ease: "power3.inOut",
-                hash: "#googleio"
-            },
+      ChennisChair: {
+        x: 6,
+        y: 2, // 1
+        z: -4.65, // -5
+        tX: 2,
+        tY: 1.25, // 1
+        tZ: -4.65, // -5
+        duration: 1,
+        ease: "power3.inOut",
+        hash: "#usopen",
+      },
 
-            PacFriend: {
-                x: 6,
-                y: 2, // 1
-                z: -2.15, // -2.5
-                tX: 2,
-                tY: 1.25, // 1
-                tZ: -2.15, // -2.5
-                duration: 1,
-                ease: "power3.inOut",
-                hash: "#pizzahut"
-            },
+      Headset: {
+        x: 5,
+        y: 6.95, // 5.95
+        z: 13.35, // 13
+        tX: 1,
+        tY: 6.2, // 5.95
+        tZ: 13.35, // 13
+        duration: 1,
+        ease: "power3.inOut",
+        hash: "#vr",
+      },
 
-            ChennisChair: {
-                x: 6,
-                y: 2, // 1
-                z: -4.65, // -5
-                tX: 2,
-                tY: 1.25, // 1
-                tZ: -4.65, // -5
-                duration: 1,
-                ease: "power3.inOut",
-                hash: "#usopen"
-            },
+      Laptop: {
+        x: 5,
+        y: 6.95, // 5.95
+        z: 10.85, // 10.5
+        tX: 1,
+        tY: 6.2, // 5.95
+        tZ: 10.85, // 10.5
+        duration: 1,
+        ease: "power3.inOut",
+        hash: "#interactive",
+      },
 
-            Headset: {
-                x: 5,
-                y: 6.95, // 5.95
-                z: 13.35, // 13
-                tX: 1,
-                tY: 6.2, // 5.95
-                tZ: 13.35, // 13
-                duration: 1,
-                ease: "power3.inOut",
-                hash: "#vr"
-            },
+      PCB: {
+        x: 5,
+        y: 6.95, // 5.95
+        z: 5.85, // 5.5
+        tX: 1,
+        tY: 6.2, // 5.95
+        tZ: 5.85, // 5.5
+        duration: 1,
+        ease: "power3.inOut",
+        hash: "#proto",
+      },
 
-            Laptop: {
-                x: 5,
-                y: 6.95, // 5.95
-                z: 10.85, // 10.5
-                tX: 1,
-                tY: 6.2, // 5.95
-                tZ: 10.85, // 10.5
-                duration: 1,
-                ease: "power3.inOut",
-                hash: "#interactive"
-            },
+      Mac: {
+        x: 5,
+        y: 6.95, // 5.95
+        z: 3.35, // 3
+        tX: 1,
+        tY: 6.2, // 5.95
+        tZ: 3.35, // 3
+        duration: 1,
+        ease: "power3.inOut",
+        hash: "#vintage",
+      },
+    }; // views lib
+  }
 
-            Animation: {
-                x: 5,
-                y: 6.95, // 5.95
-                z: 8.35, // 8
-                tX: 1,
-                tY: 6.2, // 5.95
-                tZ: 8.35, // 8
-                duration: 1,
-                ease: "power3.inOut",
-                hash: "#animation"
-            },
+  setInstance() {
+    let ratio = this.app.sizes.width / this.app.sizes.height;
 
-            PCB: {
-                x: 5,
-                y: 6.95, // 5.95
-                z: 5.85, // 5.5
-                tX: 1,
-                tY: 6.2, // 5.95
-                tZ: 5.85, // 5.5
-                duration: 1,
-                ease: "power3.inOut",
-                hash: "#proto"
-            },
+    this.instance = new THREE.PerspectiveCamera(
+      35 - ratio * 10, // targets 15deg for 16:9 screen and 35deg for 9:16
+      ratio,
+      3,
+      120
+    );
 
-            Mac: {
-                x: 5,
-                y: 6.95, // 5.95
-                z: 3.35, // 3
-                tX: 1,
-                tY: 6.2, // 5.95
-                tZ: 3.35, // 3
-                duration: 1,
-                ease: "power3.inOut",
-                hash: "#vintage"
-            }
-            
-        }; // views lib
+    this.instance.position.set(65, 20, 40);
 
+    this.app.scene.add(this.instance);
+  }
+
+  setOrbitControls() {
+    this.controls = new OrbitControls(this.instance, this.app.canvas);
+    this.controls.target.set(3, 34, 6);
+    this.controls.enableDamping = true;
+    this.controls.enabled = false;
+    // this.controls.enableZoom = false;
+    // this.controls.enablePan = false;
+    // this.controls.minAzimuthAngle = 0.65;
+    // this.controls.maxAzimuthAngle = 2.5;
+    // this.controls.minPolarAngle = 1.4;
+    // this.controls.maxPolarAngle = 1.64;
+  }
+
+  resize() {
+    let ratio = this.app.sizes.width / this.app.sizes.height;
+    this.instance.aspect = ratio;
+    this.instance.fov = 35 - ratio * 10;
+    this.instance.updateProjectionMatrix();
+  }
+
+  update() {
+    this.controls.update();
+  }
+
+  moveTo(view) {
+    window.location = this.views[view].hash;
+
+    gsap.killTweensOf(this.instance.position);
+    gsap.killTweensOf(this.controls.target);
+
+    gsap.to(this.instance.position, {
+      x: this.views[view].x,
+      y: this.views[view].y,
+      z: this.views[view].z,
+      duration: this.views[view].duration,
+      ease: this.views[view].ease,
+      onComplete: toggleMoreOpacity.bind(this),
+    });
+
+    gsap.to(this.controls.target, {
+      x: this.views[view].tX,
+      y: this.views[view].tY,
+      z: this.views[view].tZ,
+      duration: this.views[view].duration,
+      ease: this.views[view].ease,
+      onComplete: () => {
+        this.app.displayMeshes.addModels();
+      },
+    });
+
+    function toggleMoreOpacity() {
+      let moreProjectsText = this.app.scene.getObjectByName("TextMoreProjects");
+      if (view === "LowerGallery") {
+        gsap.to(moreProjectsText.material, { opacity: 1, duration: 0.5 });
+      } else if (moreProjectsText.material.opacity > 0) {
+        gsap.to(moreProjectsText.material, { opacity: 0, duration: 0.5 });
+      }
     }
-
-    setInstance() {
-
-        let ratio = this.app.sizes.width / this.app.sizes.height
-
-        this.instance = new THREE.PerspectiveCamera(
-            35 - (ratio * 10), // targets 15deg for 16:9 screen and 35deg for 9:16
-            ratio,
-            3,
-            120
-        );
-        
-        this.instance.position.set(65, 20, 40);
-
-        this.app.scene.add(this.instance);
-
-    }
-
-    setOrbitControls() {
-
-        this.controls = new OrbitControls(this.instance, this.app.canvas);
-        this.controls.target.set(3, 34, 6);
-        this.controls.enableDamping = true;
-        this.controls.enabled = false;
-        // this.controls.enableZoom = false;
-        // this.controls.enablePan = false;
-        // this.controls.minAzimuthAngle = 0.65;
-        // this.controls.maxAzimuthAngle = 2.5;
-        // this.controls.minPolarAngle = 1.4;
-        // this.controls.maxPolarAngle = 1.64;
-
-    }
-
-    resize() {
-
-        let ratio = this.app.sizes.width / this.app.sizes.height
-        this.instance.aspect = ratio;
-        this.instance.fov = 35 - (ratio * 10)
-        this.instance.updateProjectionMatrix();
-
-    }
-
-    update() {
-
-        this.controls.update();
-
-    }
-
-    moveTo(view) {
-
-        window.location = this.views[view].hash;
-
-        gsap.killTweensOf(this.instance.position);
-        gsap.killTweensOf(this.controls.target);
-
-        gsap.to(this.instance.position, {
-            x: this.views[view].x,
-            y: this.views[view].y,
-            z: this.views[view].z,
-            duration: this.views[view].duration,
-            ease: this.views[view].ease,
-            onComplete: toggleMoreOpacity.bind(this)
-        });
-
-        gsap.to(this.controls.target, {
-            x: this.views[view].tX,
-            y: this.views[view].tY,
-            z: this.views[view].tZ,
-            duration: this.views[view].duration,
-            ease: this.views[view].ease,
-            onComplete: () => { this.app.displayMeshes.addModels(); }
-        });
-
-        function toggleMoreOpacity() {
-            let moreProjectsText = this.app.scene.getObjectByName("TextMoreProjects");
-            if (view === "LowerGallery") {
-                gsap.to(moreProjectsText.material, {opacity: 1, duration: 0.5});
-            } else if (moreProjectsText.material.opacity > 0) {
-                gsap.to(moreProjectsText.material, {opacity: 0, duration: 0.5});
-            }
-
-        }
-
-    }
-
+  }
 }

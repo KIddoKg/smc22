@@ -1,174 +1,150 @@
 [
-    {
-        "title": "Google Assistant Developer Day",
-        "subtitle": "Tool of N.A., 2020",
-        "category": "Virtual Event",
-        "description": "Stage design and previsualization for a developer-focused virtual conference keynote stage. The stage was created in Unreal Engine and rendered out for the keynote speakers and their presentations to be composited into.",
-        "awards": [
-            {
-                "status": "Winner",
-                "award": "Webby Awards",
-                "category": "Technology: Virtual & Remote",
-                "project": "2021 VOICE Talks Presented by Google Assistant",
-                "credit": "Modev and Tool of NA"
-            }
-        ],
-        "model": "GoogleAssistantStage",
-        "diffMap" : "GoogleAssistantDiffuse",
-        "roughMap": "GoogleAssistantRough",
-        "xCoord": "2",
-        "yCoord": "1",
-        "zCoord": "5",
-        "rotationMultiplier": "0.15",
-        "media": [
-            "./images/projects/tna-gadd/2.jpg",
-            "./images/projects/tna-gadd/3.jpg",
-            "./images/projects/tna-gadd/4.jpg",
-            "./images/projects/tna-gadd/5.jpg",
-            "./images/projects/tna-gadd/6.jpg",
-            "./images/projects/tna-gadd/concept-final.jpg",
-            "./images/projects/tna-gadd/ue.jpg"
-        ]
-    },
-    {
-        "title": "PMI Professional Awards Gallery",
-        "subtitle": "Liberty & Co., 2021",
-        "category": "Interactive 3D App",
-        "description": "PMI's Professional Awards recognize notable achievements in the world of project management. Typically presented yearly as a ceremony at one of the Institute's gatherings, a transition to a series of virtual events beginning in 2020 created a need for a new and innovative medium. We created an immersive, interactive 3D gallery experience for the web, honoring award winners with the gravitas of a work of art. Slickly produced highlight videos and narrated audio guides enhance the gallery experience.",
-        "awards": [
+  {
+    "title": "Google Assistant Developer Day",
+    "subtitle": "Tool of N.A., 2020",
+    "category": "Virtual Event",
+    "description": "Stage design and previsualization for a developer-focused virtual conference keynote stage. The stage was created in Unreal Engine and rendered out for the keynote speakers and their presentations to be composited into.",
+    "awards": [
+      {
+        "status": "Winner",
+        "award": "Webby Awards",
+        "category": "Technology: Virtual & Remote",
+        "project": "2021 VOICE Talks Presented by Google Assistant",
+        "credit": "Modev and Tool of NA"
+      }
+    ],
+    "model": "Parrot",
+    "diffMap": "ParrotDiffuse",
+    "xCoord": "4",
+    "yCoord": "2.1",
+    "zCoord": "0",
+    "rotationMultiplier": "0.15",
+    "media": [
+      "./images/projects/tna-gadd/2.jpg",
+      "./images/projects/tna-gadd/3.jpg",
+      "./images/projects/tna-gadd/4.jpg",
+      "./images/projects/tna-gadd/5.jpg",
+      "./images/projects/tna-gadd/6.jpg",
+      "./images/projects/tna-gadd/concept-final.jpg",
+      "./images/projects/tna-gadd/ue.jpg"
+    ]
+  },
 
-        ],
-        "model": "PMIbeam",
-        "xCoord": "2",
-        "yCoord": "1",
-        "zCoord": "2.5",
-        "rotationMultiplier": "0.15",
-        "media": [
-            "./images/projects/lco-pmiawards/intro.mp4",
-            "./images/projects/lco-pmiawards/clicking.mp4",
-            "./images/projects/lco-pmiawards/exhibitwvideo.mp4",
-            "./images/projects/lco-pmiawards/nav.mp4",
-            "./images/projects/lco-pmiawards/gallery1.jpg",
-            "./images/projects/lco-pmiawards/gallery2.jpg",
-            "./images/projects/lco-pmiawards/mockups.jpg"
-        ]
-    },
-    {
-        "title": "Google I/O",
-        "subtitle": "Sparks, 2019",
-        "category": "Conference + Exhibit",
-        "description": "At this yearly developers' conference, 'sandboxes' are hands-on product and technology demo exhibits, each within either a geodesic dome, tent, or inflatable structure. In 2019, there were eight Sandbox structures, each developed in close partnership between Google product teams and the design team at Sparks. I led the visual and structural design of Sandboxes specific to Android, Web Technologies, Android Auto, and Experiments.",
-        "awards": [
-            {
-                "status": "Finalist",
-                "award": "BizBash Event Style Awards",
-                "category": "Best of the Decade: Best Conference, More Than 5,000 Attendees",
-                "project": "Google I/O 2019",
-                "credit": "Sparks"
-            }
-        ],
-        "model": "GoogleIOKiosk",
-        "diffMap": "GoogleIODiffuse",
-        "xCoord": "2",
-        "yCoord": "1",
-        "zCoord": "0",
-        "rotationMultiplier": "0.75",
-        "media": [
-            "./images/projects/sparks-gio/androiddemob.jpg",
-            "./images/projects/sparks-gio/androidscreenseat.jpg",
-            "./images/projects/sparks-gio/androidwearos.jpg",
-            "./images/projects/sparks-gio/autobackcornerv4.jpg",
-            "./images/projects/sparks-gio/autofullcornerv4b.jpg",
-            "./images/projects/sparks-gio/autowalldetailv4.jpg",
-            "./images/projects/sparks-gio/CHROMEdevicelayoutandroid.jpg",
-            "./images/projects/sparks-gio/CHROMEdevicelayoutpersp.jpg",
-            "./images/projects/sparks-gio/kiosknewd.jpg",
-            "./images/projects/sparks-gio/kiosknewev3.jpg",
-            "./images/projects/sparks-gio/kiosknewnewfv5.jpg",
-            "./images/projects/sparks-gio/paymentsdemokiosk2-26.jpg",
-            "./images/projects/sparks-gio/webaerialwithfeedbacktrackers2.jpg",
-            "./images/projects/sparks-gio/webdemokiosk2-26.jpg",
-            "./images/projects/sparks-gio/DSC02489.jpg",
-            "./images/projects/sparks-gio/DSC02492.jpg",
-            "./images/projects/sparks-gio/DSC02750.jpg",
-            "./images/projects/sparks-gio/DSC02862.jpg",
-            "./images/projects/sparks-gio/DSC03124.jpg",
-            "./images/projects/sparks-gio/DSC03723.jpg",
-            "./images/projects/sparks-gio/DSC03792.jpg",
-            "./images/projects/sparks-gio/DSC03796.jpg"
-        ]
-    },
-    {
-        "title": "Pizza Hut ARcade",
-        "subtitle": "Tool of N.A., 2021",
-        "category": "Augmented Reality",
-        "description": "Cashing in on 90s core memories of pizza parlor arcade machines, Pizza Hut introduced a limited run of boxes enhanced with an augmented reality Pac-Man game to enjoy over a takeout pie. Through an AR-equipped device's camera, the game map rises out of the box and presents the familiar game to play in 3D. Concept art, animation, and game-ready assets were prepared for integration by 8th Wall. High-scoring players were entered to win a custom Pac-Man cabinet.",
-        "awards": [
-            {
-                "status": "Winner",
-                "award": "FWA of the Day",
-                "category": "83 Points, 2 Days",
-                "project": "Pizza Hut WebAR PAC-MAN Box",
-                "credit": "Pizza Hut, GSD&M, Tool"
-            },
-            {
-                "status": "Winner",
-                "award": "American Advertising Awards",
-                "category": "Gold, Games & Gold, Innovative Use of Interactive Technology",
-                "project": "Pizza Hut WebAR PAC-MAN Box",
-                "credit": "Tool"
-            }
-        ],
-        "model": "PacFriend",
-        "diffMap": "PacmanDiffuse",
-        "xCoord": "2",
-        "yCoord": "1",
-        "zCoord": "-2.5",
-        "rotationMultiplier": "1.15",
-        "media": [
-            "./images/projects/tna-pacman/pizzahutbox-qr.jpg",
-            "./images/projects/tna-pacman/armazestart.jpg",
-            "./images/projects/tna-pacman/maxeextend2.jpg",
-            "./images/projects/tna-pacman/hero_image-1536x864.jpg",
-            "./images/projects/tna-pacman/gif-fast.mp4",
-            "./images/projects/tna-pacman/animationtest.mp4"
-        ]
-    },
-    {
-        "title": "Chase Review VR",
-        "subtitle": "Helios Interactive + MKG, 2014",
-        "category": "Virtual Reality",
-        "description": "For their 30th year of sponsorship for the US Open Tennis Championship, we created an interactive VR simulator of the computer vision challenge system, Chase Review. Like an umpire at the Open, players consult the Chase Review monitor to make an in-or-out call during a virtual tennis match in Arthur Ashe Stadium. Along with the digital experience made for the Oculus Rift DK2, a series of physical installations were also created to house it on-site at the Billie Jean King Tennis Center, in the Chase Lounge, at JPMorgan Chase's corporate headquarters, and for a day open to the public in Flatiron Plaza.",
-        "awards": [],
-        "model": "ChennisChair",
-        "diffMap": "ChennisChairDiffuse",
-        "roughMap": "ChennisChairRough",
-        "metalMap": "ChennisChairMetal",
-        "xCoord": "2",
-        "yCoord": "1",
-        "zCoord": "-5",
-        "rotationMultiplier": "0.75",
-        "media": [
-            "./images/projects/mkg-chase/chaseux.mp4",
-            "./images/projects/mkg-chase/helios-chase.mp4",
-            "./images/projects/mkg-chase/chase-vr-ext.jpg",
-            "./images/projects/mkg-chase/chase-vr-side.jpg",
-            "./images/projects/mkg-chase/vr-cutaway.jpg",
-            "./images/projects/mkg-chase/lounge.jpg",
-            "./images/projects/mkg-chase/lounge-aerial.jpg",
-            "./images/projects/mkg-chase/flatiron-sketch.jpg",
-            "./images/projects/mkg-chase/welcome-ext.jpg",
-            "./images/projects/mkg-chase/welcome-aerial.jpg",
-            "./images/projects/mkg-chase/IMG_1856.JPG",
-            "./images/projects/mkg-chase/IMG_1854.JPG",
-            "./images/projects/mkg-chase/IMG_0047.jpg",
-            "./images/projects/mkg-chase/IMG_0042.jpg",
-            "./images/projects/mkg-chase/IMG_0050.jpg",
-            "./images/projects/mkg-chase/IMG_0054.jpg",
-            "./images/projects/mkg-chase/IMG_1870.JPG",
-            "./images/projects/mkg-chase/flatiron-truck.jpg",
-            "./images/projects/mkg-chase/flatiron-aerial.jpg"
-            
-        ]
-    }
+  {
+    "title": "Google I/O",
+    "subtitle": "Sparks, 2019",
+    "category": "Conference + Exhibit",
+    "description": "At this yearly developers' conference, 'sandboxes' are hands-on product and technology demo exhibits, each within either a geodesic dome, tent, or inflatable structure. In 2019, there were eight Sandbox structures, each developed in close partnership between Google product teams and the design team at Sparks. I led the visual and structural design of Sandboxes specific to Android, Web Technologies, Android Auto, and Experiments.",
+    "awards": [
+      {
+        "status": "Finalist",
+        "award": "BizBash Event Style Awards",
+        "category": "Best of the Decade: Best Conference, More Than 5,000 Attendees",
+        "project": "Google I/O 2019",
+        "credit": "Sparks"
+      }
+    ],
+    "model": "GoogleIOKiosk",
+    "diffMap": "GoogleIODiffuse",
+    "xCoord": "2",
+    "yCoord": "1",
+    "zCoord": "0",
+    "rotationMultiplier": "0.75",
+    "media": [
+      "./images/projects/sparks-gio/androiddemob.jpg",
+      "./images/projects/sparks-gio/androidscreenseat.jpg",
+      "./images/projects/sparks-gio/androidwearos.jpg",
+      "./images/projects/sparks-gio/autobackcornerv4.jpg",
+      "./images/projects/sparks-gio/autofullcornerv4b.jpg",
+      "./images/projects/sparks-gio/autowalldetailv4.jpg",
+      "./images/projects/sparks-gio/CHROMEdevicelayoutandroid.jpg",
+      "./images/projects/sparks-gio/CHROMEdevicelayoutpersp.jpg",
+      "./images/projects/sparks-gio/kiosknewd.jpg",
+      "./images/projects/sparks-gio/kiosknewev3.jpg",
+      "./images/projects/sparks-gio/kiosknewnewfv5.jpg",
+      "./images/projects/sparks-gio/paymentsdemokiosk2-26.jpg",
+      "./images/projects/sparks-gio/webaerialwithfeedbacktrackers2.jpg",
+      "./images/projects/sparks-gio/webdemokiosk2-26.jpg",
+      "./images/projects/sparks-gio/DSC02489.jpg",
+      "./images/projects/sparks-gio/DSC02492.jpg",
+      "./images/projects/sparks-gio/DSC02750.jpg",
+      "./images/projects/sparks-gio/DSC02862.jpg",
+      "./images/projects/sparks-gio/DSC03124.jpg",
+      "./images/projects/sparks-gio/DSC03723.jpg",
+      "./images/projects/sparks-gio/DSC03792.jpg",
+      "./images/projects/sparks-gio/DSC03796.jpg"
+    ]
+  },
+  {
+    "title": "Pizza Hut ARcade",
+    "subtitle": "Tool of N.A., 2021",
+    "category": "Augmented Reality",
+    "description": "Cashing in on 90s core memories of pizza parlor arcade machines, Pizza Hut introduced a limited run of boxes enhanced with an augmented reality Pac-Man game to enjoy over a takeout pie. Through an AR-equipped device's camera, the game map rises out of the box and presents the familiar game to play in 3D. Concept art, animation, and game-ready assets were prepared for integration by 8th Wall. High-scoring players were entered to win a custom Pac-Man cabinet.",
+    "awards": [
+      {
+        "status": "Winner",
+        "award": "FWA of the Day",
+        "category": "83 Points, 2 Days",
+        "project": "Pizza Hut WebAR PAC-MAN Box",
+        "credit": "Pizza Hut, GSD&M, Tool"
+      },
+      {
+        "status": "Winner",
+        "award": "American Advertising Awards",
+        "category": "Gold, Games & Gold, Innovative Use of Interactive Technology",
+        "project": "Pizza Hut WebAR PAC-MAN Box",
+        "credit": "Tool"
+      }
+    ],
+    "model": "PacFriend",
+    "diffMap": "PacmanDiffuse",
+    "xCoord": "2",
+    "yCoord": "1",
+    "zCoord": "-2.5",
+    "rotationMultiplier": "1.15",
+    "media": [
+      "./images/projects/tna-pacman/pizzahutbox-qr.jpg",
+      "./images/projects/tna-pacman/armazestart.jpg",
+      "./images/projects/tna-pacman/maxeextend2.jpg",
+      "./images/projects/tna-pacman/hero_image-1536x864.jpg",
+      "./images/projects/tna-pacman/gif-fast.mp4",
+      "./images/projects/tna-pacman/animationtest.mp4"
+    ]
+  },
+  {
+    "title": "Chase Review VR",
+    "subtitle": "Helios Interactive + MKG, 2014",
+    "category": "Virtual Reality",
+    "description": "For their 30th year of sponsorship for the US Open Tennis Championship, we created an interactive VR simulator of the computer vision challenge system, Chase Review. Like an umpire at the Open, players consult the Chase Review monitor to make an in-or-out call during a virtual tennis match in Arthur Ashe Stadium. Along with the digital experience made for the Oculus Rift DK2, a series of physical installations were also created to house it on-site at the Billie Jean King Tennis Center, in the Chase Lounge, at JPMorgan Chase's corporate headquarters, and for a day open to the public in Flatiron Plaza.",
+    "awards": [],
+    "model": "ChennisChair",
+    "diffMap": "ChennisChairDiffuse",
+    "roughMap": "ChennisChairRough",
+    "metalMap": "ChennisChairMetal",
+    "xCoord": "2",
+    "yCoord": "1",
+    "zCoord": "-5",
+    "rotationMultiplier": "0.75",
+    "media": [
+      "./images/projects/mkg-chase/chaseux.mp4",
+      "./images/projects/mkg-chase/helios-chase.mp4",
+      "./images/projects/mkg-chase/chase-vr-ext.jpg",
+      "./images/projects/mkg-chase/chase-vr-side.jpg",
+      "./images/projects/mkg-chase/vr-cutaway.jpg",
+      "./images/projects/mkg-chase/lounge.jpg",
+      "./images/projects/mkg-chase/lounge-aerial.jpg",
+      "./images/projects/mkg-chase/flatiron-sketch.jpg",
+      "./images/projects/mkg-chase/welcome-ext.jpg",
+      "./images/projects/mkg-chase/welcome-aerial.jpg",
+      "./images/projects/mkg-chase/IMG_1856.JPG",
+      "./images/projects/mkg-chase/IMG_1854.JPG",
+      "./images/projects/mkg-chase/IMG_0047.jpg",
+      "./images/projects/mkg-chase/IMG_0042.jpg",
+      "./images/projects/mkg-chase/IMG_0050.jpg",
+      "./images/projects/mkg-chase/IMG_0054.jpg",
+      "./images/projects/mkg-chase/IMG_1870.JPG",
+      "./images/projects/mkg-chase/flatiron-truck.jpg",
+      "./images/projects/mkg-chase/flatiron-aerial.jpg"
+    ]
+  }
 ]
