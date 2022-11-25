@@ -18,7 +18,7 @@
     "xCoord": "3.5",
     "yCoord": "2.1",
     "zCoord": "0",
-    "rotationMultiplier": "0.15",
+    "rotationMultiplier": "-2",
     "media": [
       "./images/projects/tna-gadd/2.jpg",
       "./images/projects/tna-gadd/3.jpg",

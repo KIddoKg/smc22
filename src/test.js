@@ -7,8 +7,12 @@ import moreProjects from "./moreprojects.json";
 const featuredProjectSection = document.querySelector(".featuredprojectstxt");
 const moreProjectsSection = document.querySelector(".moreprojectstxt");
 
-featuredProjects.forEach(function(each) { PopulateProjetText(each, featuredProjectSection)});
-moreProjects.forEach(function(each) { PopulateProjetText(each, moreProjectsSection)});
+featuredProjects.forEach(function (each) {
+  PopulateProjetText(each, featuredProjectSection);
+});
+moreProjects.forEach(function (each) {
+  PopulateProjetText(each, moreProjectsSection);
+});
 
 // Instantiate 3D application
 
@@ -17,57 +21,50 @@ const app = new App(webGLcanvas); // TURN OFF FOR TESTING MOBILE LOADING/SPLASH
 
 // disables mobile overscroll
 
-document.body.addEventListener("touchmove",
-    (e) => { e.preventDefault(); },
-    { passive: false, useCapture: false }
+document.body.addEventListener(
+  "touchmove",
+  (e) => {
+    e.preventDefault();
+  },
+  { passive: false, useCapture: false }
 );
 
 function PopulateProjetText(project, section) {
+  let projectEntry = document.createElement("div");
+  projectEntry.classList.add("featuredproject");
 
-    let projectEntry = document.createElement("div");
-    projectEntry.classList.add("featuredproject");
+  let projectTitle = document.createElement("h4");
+  projectTitle.innerText = project.title;
 
-    let projectTitle = document.createElement("h4");
-    projectTitle.innerText = project.title;
+  let projectSubtitle = document.createElement("h5");
+  projectSubtitle.innerText = project.subtitle;
 
-    let projectSubtitle = document.createElement("h5");
-    projectSubtitle.innerText = project.subtitle;
+  let projectDescription = document.createElement("p");
+  projectDescription.innerText = project.description;
 
-    let projectDescription = document.createElement("p");
-    projectDescription.innerText = project.description;
+  section.append(projectTitle, projectSubtitle, projectDescription);
 
-    section.append(projectTitle, projectSubtitle, projectDescription);
+  if (project.awards !== undefined && project.awards.length > 0) {
+    let awardsList = document.createElement("ul");
 
-    if (project.awards !== undefined && project.awards.length > 0) {
+    project.awards.forEach(function (each) {
+      let awardListItem = document.createElement("li");
+      awardListItem.innerText = `${each.status}, ${each.award} - ${each.category} for ${each.project} with ${each.credit}`;
+      awardsList.append(awardListItem);
+    });
 
-        let awardsList = document.createElement("ul");
+    section.append(awardsList);
+  }
 
-        project.awards.forEach(
-            function(each) {
-                let awardListItem = document.createElement("li");
-                awardListItem.innerText = `${each.status}, ${each.award} - ${each.category} for ${each.project} with ${each.credit}`;
-                awardsList.append(awardListItem);
-            }
-        );
+  if (project.media !== undefined && project.media.length > 0) {
+    let mediaList = document.createElement("ul");
 
-        section.append(awardsList);
+    project.media.forEach(function (each) {
+      mediaList.innerHTML += `<li><a href="${each}" target=_blank>${each}</a></li>`;
+    });
 
-    }
+    section.append(mediaList);
+  }
 
-    if (project.media !== undefined && project.media.length > 0) {
-
-        let mediaList = document.createElement("ul");
-
-        project.media.forEach(
-            function(each) {
-                mediaList.innerHTML += `<li><a href="${each}" target=_blank>${each}</a></li>`;
-            }
-        );
-
-        section.append(mediaList);
-
-    }
-
-    section.append(projectEntry);
-    
+  section.append(projectEntry);
 }

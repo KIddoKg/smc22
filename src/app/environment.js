@@ -13,14 +13,14 @@ export default class Environment {
     const pointLightA = new THREE.SpotLight(0xffffff, 10, 50, Math.PI);
     // const pointLightB = new THREE.SpotLight(0xffffff, 2, 50, Math.PI);
     // const pointLightC = new THREE.SpotLight(0xffffff, 2, 50, Math.PI);
-    const pointLightD = new THREE.SpotLight(0xffffff, 5, 10, Math.PI);
-    const pointLightE = new THREE.SpotLight(0xffffff, 10, 10, Math.PI);
+    const pointLightD = new THREE.SpotLight(0xffffff, 10, 50, Math.PI);
+    const pointLightE = new THREE.SpotLight(0xffffff, 10, 50, Math.PI);
 
     // const pointLightA = new THREE.PointLight(0xffffff, 300, 50, 2);
     const pointLightB = new THREE.PointLight(0xffffff, 300, 50, 2);
     const pointLightC = new THREE.PointLight(0xffffff, 50, 15, 2);
     // const pointLightD = new THREE.PointLight(0xffffff, 50, 20, 2);
-    // const pointLightE = new THREE.PointLight(0xffffff, 50, 15, 2);
+    // const pointLightE = new THREE.PointLight(0xffffff, 10, 50, Math.PI);
 
     // pointLightA.castShadow = true;
     pointLightB.castShadow = true;
@@ -36,60 +36,57 @@ export default class Environment {
     pointLightC.shadow.mapSize.height = 128;
     pointLightD.shadow.mapSize.width = 128;
     pointLightD.shadow.mapSize.height = 128;
-    // pointLightE.shadow.mapSize.width = 512;
-    // pointLightE.shadow.mapSize.height = 512;
+    pointLightE.shadow.mapSize.width = 128;
+    pointLightE.shadow.mapSize.height = 128;
     pointLightA.shadow.radius = 5;
     pointLightB.shadow.radius = 5;
     pointLightC.shadow.radius = 5;
     pointLightD.shadow.radius = 5;
-    // pointLightE.shadow.radius = 5;
+    pointLightE.shadow.radius = 5;
 
-    pointLightA.position.set(15, 30, -15);
-    pointLightB.position.set(-18, 7, 18);
-    pointLightC.position.set(6, 5, 3);
-    pointLightD.position.set(5, 10, 14);
-    pointLightE.position.set(-3.5, 14, 0);
+    pointLightA.position.set(15, 15, 10);
+    pointLightB.position.set(3, 4, 3);
+    pointLightC.position.set(6, 9, 1);
+    pointLightD.position.set(7, 7, -5);
+    pointLightE.position.set(-3.5, 14, 8);
 
-    const UpperStripLightA = new THREE.RectAreaLight(0xffffff, 5, 16, 0.15);
+    const HightStripLightA = new THREE.RectAreaLight(0xffffff, 5, 16, 0.15);
+    HightStripLightA.position.set(-3, 13, 8);
+
+    HightStripLightA.lookAt(-4.75, 10, 8);
+    const UpperStripLightA = new THREE.RectAreaLight(0xffffff, 5, 16, 0.15); // 5, 16, 0.15
     // const UpperStripLightB = new THREE.RectAreaLight(0xffffff, 5, 16, .15);
-    const UpperStripLightC = new THREE.RectAreaLight(0xffffff, 2, 1, 3.8);
-    const UpperStripLightD = new THREE.RectAreaLight(0xffffff, 2, 1, 3.8);
-    UpperStripLightA.position.set(-4.76, 8.65, 8);
+    // const UpperStripLightC = new THREE.RectAreaLight(0xffffff, 0, 0, 0); // 2, 1, 3.8
+    // const UpperStripLightD = new THREE.RectAreaLight(0xffffff, 0, 0, 0); // 2, 1, 3.8)
+    UpperStripLightA.position.set(-3, 8.65, 1); //-4.76, 8.65, 8
     // UpperStripLightB.position.set(-4.76, 4.65, 8);
-    UpperStripLightC.position.set(-4.76, 6.75, 15.8);
-    UpperStripLightD.position.set(-4.76, 6.75, 0.1);
-    UpperStripLightA.lookAt(-4.75, 0, 8);
+    // UpperStripLightC.position.set(0, 0, 0); //-4.76, 6.75, 15.8
+    // UpperStripLightD.position.set(0, 0, 0); //-4.76, 6.75, 0.1
+    UpperStripLightA.lookAt(-4.75, 0, 1);
     // UpperStripLightB.lookAt(-4.75, 10, 8);
-    UpperStripLightC.lookAt(-4.75, 6.75, 0);
-    UpperStripLightD.lookAt(-4.75, 6.75, 15.8);
+    // UpperStripLightC.lookAt(-4.75, 6.75, 0);
+    // UpperStripLightD.lookAt(-4.75, 6.75, 15.8);
 
     const LowerStripLightA = new THREE.RectAreaLight(0xffffff, 5, 16, 0.15);
-    // const LowerStripLightB = new THREE.RectAreaLight(0xffffff, 5, 16, .15);
-    const LowerStripLightC = new THREE.RectAreaLight(0xffffff, 2, 1, 3.8);
-    const LowerStripLightD = new THREE.RectAreaLight(0xffffff, 2, 1, 3.8);
-    LowerStripLightA.position.set(-3.76, 3.7, 0);
-    // LowerStripLightB.position.set(-3.76, -0.1, 0);
-    LowerStripLightC.position.set(-3.76, 1.8, 7.9);
-    LowerStripLightD.position.set(-3.76, 1.8, -7.9);
-    LowerStripLightA.lookAt(-3.75, 0, 0);
-    // LowerStripLightB.lookAt(-3.75, 1, 0);
-    LowerStripLightC.lookAt(-3.75, 1.8, 0);
-    LowerStripLightD.lookAt(-3.75, 1.8, 0);
+    LowerStripLightA.position.set(-2, 4.2, -5);
+
+    LowerStripLightA.lookAt(-3.75, -7, -5);
 
     this.app.scene.add(
-      pointLightA,
-      pointLightB,
+      // pointLightA,
+      // pointLightB,
       pointLightC,
       pointLightD,
       pointLightE,
       UpperStripLightA,
       // UpperStripLightB,
-      UpperStripLightC,
-      UpperStripLightD,
+      // UpperStripLightC,
+      // UpperStripLightD,
       LowerStripLightA,
+      HightStripLightA
       // LowerStripLightB,
-      LowerStripLightC,
-      LowerStripLightD
+      // LowerStripLightC,
+      // LowerStripLightD
     );
   }
 
