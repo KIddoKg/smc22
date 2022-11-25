@@ -4,26 +4,199 @@
     "type": "gltf",
     "path": "./environment/doubledecker.glb"
   },
+
+  {
+    "name": "Saichania",
+    "type": "gltf",
+    "path": "./projectmodels/Saichania.glb"
+  },
+  {
+    "name": "SaichaniaDiffuse",
+    "type": "texture",
+    "path": "./textures/saichaniadiff.jpg"
+  },
+  {
+    "name": "Spinosaurus",
+    "type": "gltf",
+    "path": "./projectmodels/Spinosaurus.glb"
+  },
+  {
+    "name": "SpinosaurusDiffuse",
+    "type": "texture",
+    "path": "./textures/spinosaurusdiff.png"
+  },
+  {
+    "name": "Parasaurolophus",
+    "type": "gltf",
+    "path": "./projectmodels/Parasaurolophus.glb"
+  },
+  {
+    "name": "ParasaurolophusDiffuse",
+    "type": "texture",
+    "path": "./textures/parasaurolophusdiff.png"
+  },
+  {
+    "name": "Velociraptor",
+    "type": "gltf",
+    "path": "./projectmodels/Velociraptor.glb"
+  },
+  {
+    "name": "VelociraptorDiffuse",
+    "type": "texture",
+    "path": "./textures/velociraptordiff.png"
+  },
+  {
+    "name": "Giganotosaurus",
+    "type": "gltf",
+    "path": "./projectmodels/Giganotosaurus.glb"
+  },
+  {
+    "name": "GiganotosaurusDiffuse",
+    "type": "texture",
+    "path": "./textures/giganotosaurusdiff.png"
+  },
+  {
+    "name": "Therizinosaurus",
+    "type": "gltf",
+    "path": "./projectmodels/Therizinosaurus.glb"
+  },
+  {
+    "name": "TherizinosaurusDiffuse",
+    "type": "texture",
+    "path": "./textures/therizinosaurusdiff.png"
+  },
+  {
+    "name": "Kronosaurus",
+    "type": "gltf",
+    "path": "./projectmodels/Kronosaurus.glb"
+  },
+  {
+    "name": "KronosaurusDiffuse",
+    "type": "texture",
+    "path": "./textures/kronosaurusdiff.png"
+  },
+  {
+    "name": "Mosasaurus",
+    "type": "gltf",
+    "path": "./projectmodels/Mosasaurus.glb"
+  },
+  {
+    "name": "MosasaurusDiffuse",
+    "type": "texture",
+    "path": "./textures/mosasaurusdiff.png"
+  },
+  {
+    "name": "Baryonyx",
+    "type": "gltf",
+    "path": "./projectmodels/Baryonyx.glb"
+  },
+  {
+    "name": "BaryonyxDiffuse",
+    "type": "texture",
+    "path": "./textures/baryonyxdiff.png"
+  },
+  {
+    "name": "Pterodactyl",
+    "type": "gltf",
+    "path": "./projectmodels/Pterodactyl.glb"
+  },
+  {
+    "name": "PterodactylDiffuse",
+    "type": "texture",
+    "path": "./textures/pterodactyldiff.png"
+  },
+  {
+    "name": "Triceratops",
+    "type": "gltf",
+    "path": "./projectmodels/Triceratops.glb"
+  },
+  {
+    "name": "TriceratopsDiffuse",
+    "type": "texture",
+    "path": "./textures/triceratopsdiff.png"
+  },
+  {
+    "name": "Tyrannosaurusrex",
+    "type": "gltf",
+    "path": "./projectmodels/Tyrannosaurusrex.glb"
+  },
+  {
+    "name": "TyrannosaurusrexDiffuse",
+    "type": "texture",
+    "path": "./textures/tyrannosaurusrexdiff.png"
+  },
+  {
+    "name": "Coelophysis",
+    "type": "gltf",
+    "path": "./projectmodels/Coelophysis.glb"
+  },
+  {
+    "name": "CoelophysisDiffuse",
+    "type": "texture",
+    "path": "./textures/coelophysisdiff.png"
+  },
+  {
+    "name": "Pistosaur",
+    "type": "gltf",
+    "path": "./projectmodels/Pistosaur.glb"
+  },
+  {
+    "name": "PistosaurDiffuse",
+    "type": "texture",
+    "path": "./textures/pistosaurdiff.jpg"
+  },
+  {
+    "name": "Allosaurus",
+    "type": "gltf",
+    "path": "./projectmodels/Allosaurus.glb"
+  },
+  {
+    "name": "AllosaurusDiffuse",
+    "type": "texture",
+    "path": "./textures/allosaurusdiff.png"
+  },
+  {
+    "name": "Brachiosaurus",
+    "type": "gltf",
+    "path": "./projectmodels/Brachiosaurus.glb"
+  },
+  {
+    "name": "BrachiosaurusDiffuse",
+    "type": "texture",
+    "path": "./textures/brachiosaurusdiff.png"
+  },
+  {
+    "name": "Dimorphodon",
+    "type": "gltf",
+    "path": "./projectmodels/Dimorphodon.glb"
+  },
+  {
+    "name": "DimorphodonDiffuse",
+    "type": "texture",
+    "path": "./textures/dimorphodondiff.png"
+  },
+  {
+    "name": "Dryosauro",
+    "type": "gltf",
+    "path": "./projectmodels/Dryosauro.glb"
+  },
+  {
+    "name": "DryosauroDiffuse",
+    "type": "texture",
+    "path": "./textures/dryosaurodiff.png"
+  },
+
   {
     "name": "Sketchfab_model",
     "type": "gltf",
     "path": "./projectmodels/leather_wooden_chest_-_3d_scan_quixel_megascans.glb"
   },
   {
-    "name": "Parrot",
-    "type": "gltf",
-    "path": "./projectmodels/parrot.glb"
-  },
-  {
     "name": "wolf",
     "type": "gltf",
     "path": "./projectmodels/wolf.glb"
   },
-  {
-    "name": "ParrotDiffuse",
-    "type": "texture",
-    "path": "./textures/parrotdiff.jpg"
-  },
+
   {
     "name": "CatRussian",
     "type": "gltf",

@@ -208,6 +208,19 @@ export default class Environment {
               THREE.LinearEncoding;
             shadow = false;
             break;
+          case "OpenRectangleTwo":
+            parameters = {
+              map: this.app.loaders.items.RectangleDiffuse,
+              metalnessMap: this.app.loaders.items.RectangleMetal,
+              normalMap: this.app.loaders.items.RectangleNormal,
+              roughnessMap: this.app.loaders.items.RectangleRough,
+              metalness: 1,
+              // roughness: 0.25
+            };
+            this.app.loaders.items.RectangleNormal.encoding =
+              THREE.LinearEncoding;
+            shadow = false;
+            break;
 
           case "FloatingCircle":
             parameters = {

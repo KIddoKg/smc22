@@ -195,10 +195,6 @@ export default class Navigation {
             navTag.classList.add("inactive");
           }
         });
-        if (intersectedName === "TextMoreProjects") {
-          this.app.canvas.style.cursor = "pointer";
-          selection = true;
-        }
         break;
 
       default:
@@ -667,11 +663,6 @@ export default class Navigation {
       event.stopPropagation();
 
       let moveToLocation = "main";
-      if (project.category.length > 0) {
-        moveToLocation = "LowerGallery" || "UpperGallery";
-      } else {
-        moveToLocation = "UpperGallery" || "HightGallery";
-      }
 
       gsap.to(modelRef.rotation, {
         y: Math.PI * 0.5,

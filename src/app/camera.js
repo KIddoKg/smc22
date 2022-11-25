@@ -84,11 +84,11 @@ export default class Camera {
         hash: "#about",
       },
 
-      Parrot: {
-        x: 12,
+      Saichania: {
+        x: 10,
         y: 3.25, // 2
         z: 1, // 0
-        tX: 8,
+        tX: 6,
         tY: 2.75, // 2
         tZ: 1, // 0
         duration: 1,
@@ -96,130 +96,200 @@ export default class Camera {
         hash: "#googleassistant",
       },
 
-      // wolf: {
-      //   x: 6,
-      //   y: 2, // 1
-      //   z: 2.85, // 2.5
-      //   tX: 2,
-      //   tY: 1.25, // 1
-      //   tZ: 2.85, // 2.5
-      //   duration: 1,
-      //   ease: "power3.inOut",
-      //   hash: "#pmiawards",
-      // },
-
-      wolf: {
-        x: 12,
-        y: 3.25, // 2
-        z: 1, // 0
-        tX: 8,
-        tY: 2.75, // 2
-        tZ: 1, // 0
-        duration: 1,
-        ease: "power3.inOut",
-        hash: "#googleassistant",
-      },
-      GoogleIOKiosk: {
-        x: 6,
-        y: 2, // 1
-        z: 0.35, // 0
-        tX: 2,
-        tY: 1.25, // 1
-        tZ: 0.35, // 0
+      Spinosaurus: {
+        x: 8, //
+        y: 3.25, // góc cam trên
+        z: -1.5, // trái phải
+        tX: 4,
+        tY: 2.75, // góc cam dưới
+        tZ: -1.5, // trái phải
         duration: 1,
         ease: "power3.inOut",
         hash: "#googleio",
       },
 
-      PacFriend: {
-        x: 6,
-        y: 2, // 1
-        z: -2.15, // -2.5
-        tX: 2,
-        tY: 1.25, // 1
-        tZ: -2.15, // -2.5
+      Parasaurolophus: {
+        x: 10,
+        y: 3.25, // 1
+        z: -3.7, // -2.5
+        tX: 6,
+        tY: 2.75, // 1
+        tZ: -3.7, // -2.5
         duration: 1,
         ease: "power3.inOut",
         hash: "#pizzahut",
       },
-      Beagle: {
-        x: 6,
-        y: 2, // 1
-        z: -2.15, // -2.5
-        tX: 2,
-        tY: 1.25, // 1
-        tZ: -2.15, // -2.5
-        duration: 1,
-        ease: "power3.inOut",
-        hash: "#beagle",
-      },
-      // Animation: {
-      //   x: 16,
-      //   y: 12, // 1
-      //   z: -12.15, // -2.5
-      //   tX: 12,
-      //   tY: 11.25, // 1
-      //   tZ: -2.15, // -2.5
-      //   duration: 1,
-      //   ease: "power3.inOut",
-      //   hash: "#animation",
-      // },
 
-      ChennisChair: {
-        x: 6,
-        y: 2, // 1
-        z: -4.65, // -5
-        tX: 2,
-        tY: 1.25, // 1
-        tZ: -4.65, // -5
+      Velociraptor: {
+        x: 8,
+        y: 3.25, // 1
+        z: -6, // -5
+        tX: 4,
+        tY: 2.75, // 1
+        tZ: -6, // -5
         duration: 1,
         ease: "power3.inOut",
         hash: "#usopen",
       },
+      Giganotosaurus: {
+        x: 10,
+        y: 3.25, // 1
+        z: -8.1, // -5
+        tX: 6,
+        tY: 2.75, // 1
+        tZ: -8.1, // -5
+        duration: 1,
+        ease: "power3.inOut",
+        hash: "#usopenqq",
+      },
+      Therizinosaurus: {
+        x: 8,
+        y: 3.25, // 1
+        z: -10.4, // -5
+        tX: 4,
+        tY: 2.75, // 1
+        tZ: -10.4, // -5
+        duration: 1,
+        ease: "power3.inOut",
+        hash: "#usopen",
+      },
+      ///////////////////
+      Kronosaurus: {
+        x: 10,
+        y: 7.75, // 2
+        z: 8.2, // 0
+        tX: 6,
+        tY: 7.25, // 2
+        tZ: 8.2, // 0
+        duration: 1,
+        ease: "power3.inOut",
+        hash: "#googleassistant",
+      },
 
-      Headset: {
-        x: 5,
-        y: 6.95, // 5.95
-        z: 13.35, // 13
-        tX: 1,
-        tY: 6.2, // 5.95
-        tZ: 13.35, // 13
+      Mosasaurus: {
+        x: 8,
+        y: 7.5, // 1
+        z: 6, // -2.5
+        tX: 4,
+        tY: 7, // 1
+        tZ: 6, // -2.5
+        duration: 1,
+        ease: "power3.inOut",
+        hash: "#beagle",
+      },
+      Baryonyx: {
+        x: 10,
+        y: 7.75, // 1
+        z: 3.5, // -2.5
+        tX: 6,
+        tY: 7.25, // 1
+        tZ: 3.5, // -2.5
+        duration: 1,
+        ease: "power3.inOut",
+        hash: "#animation",
+      },
+
+      Pterodactyl: {
+        x: 8,
+        y: 7.5, // 5.95
+        z: 1, // 13
+        tX: 4,
+        tY: 7, // 5.95
+        tZ: 1, // 13
         duration: 1,
         ease: "power3.inOut",
         hash: "#vr",
       },
 
-      Laptop: {
-        x: 5,
-        y: 6.95, // 5.95
-        z: 10.85, // 10.5
-        tX: 1,
-        tY: 6.2, // 5.95
-        tZ: 10.85, // 10.5
+      Triceratops: {
+        x: 10,
+        y: 7.75, // 1
+        z: -1.3, // -2.5
+        tX: 6,
+        tY: 7.25, // 1
+        tZ: -1.3, // -3.5
         duration: 1,
         ease: "power3.inOut",
         hash: "#interactive",
       },
 
-      PCB: {
-        x: 5,
-        y: 6.95, // 5.95
-        z: 5.85, // 5.5
-        tX: 1,
-        tY: 6.2, // 5.95
-        tZ: 5.85, // 5.5
+      Tyrannosaurusrex: {
+        x: 8,
+        y: 7.5, // 5.95
+        z: -3.5, // 13
+        tX: 4,
+        tY: 7, // 5.95
+        tZ: -3.5, // 13
         duration: 1,
         ease: "power3.inOut",
         hash: "#proto",
       },
+      Coelophysis: {
+        x: 10,
+        y: 12.25, // 5.95
+        z: 16.35, // 3
+        tX: 6,
+        tY: 11.75, // 5.95
+        tZ: 16.35, // 3
+        duration: 1,
+        ease: "power3.inOut",
+        hash: "#vintage",
+      },
+      /////
+      Pistosaur: {
+        x: 8,
+        y: 12, // 5.95
+        z: 14.2, // 3
+        tX: 4,
+        tY: 11.5, // 5.95
+        tZ: 14.2, // 3
+        duration: 1,
+        ease: "power3.inOut",
+        hash: "#vintage",
+      },
 
-      Mac: {
-        x: 5,
-        y: 6.95, // 5.95
-        z: 3.35, // 3
-        tX: 1,
-        tY: 6.2, // 5.95
-        tZ: 3.35, // 3
+      Allosaurus: {
+        x: 10,
+        y: 12, // 5.95
+        z: 12.2, // 3
+        tX: 6,
+        tY: 11.5, // 5.95
+        tZ: 12.2, // 3
+        duration: 1,
+        ease: "power3.inOut",
+        hash: "#vintage",
+      },
+
+      Brachiosaurus: {
+        x: 8,
+        y: 12, // 5.95
+        z: 9.6, // 3
+        tX: 4,
+        tY: 11.5, // 5.95
+        tZ: 9.6, // 3
+        duration: 1,
+        ease: "power3.inOut",
+        hash: "#vintage",
+      },
+
+      Dimorphodon: {
+        x: 10,
+        y: 12, // 5.95
+        z: 7.4, // 3
+        tX: 6,
+        tY: 11.5, // 5.95
+        tZ: 7.4, // 3
+        duration: 1,
+        ease: "power3.inOut",
+        hash: "#vintage",
+      },
+      Dryosauro: {
+        x: 8,
+        y: 12, // 5.95
+        z: 5.2, // 3
+        tX: 4,
+        tY: 11.5, // 5.95
+        tZ: 5.2, // 3
         duration: 1,
         ease: "power3.inOut",
         hash: "#vintage",

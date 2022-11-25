@@ -4,11 +4,97 @@
     "subtitle": "Hard surface modeling, game assets, and arch-viz",
     "category": "",
     "description": "I started out as an industrial designer, and representing ideas and forms accurately is an integral part of that work. I've been creating 3D models, rendered images, animations, game-ready assets and technical illustrations almost every day for the past decade.",
-    "model": "Animation",
+    "model": "Coelophysis",
+    "diffMap": "CoelophysisDiffuse",
+
+    "xCoord": "2.3",
+    "yCoord": "10.8",
+    "zCoord": "15.3",
+    "rotationMultiplier": "0.35",
+    "media": [
+      "./images/projects/animation/circuits.mp4",
+      "./images/projects/animation/webux.mp4"
+    ]
+  },
+  {
+    "title": "Visualization & Animation",
+    "subtitle": "Hard surface modeling, game assets, and arch-viz",
+    "category": "",
+    "description": "I started out as an industrial designer, and representing ideas and forms accurately is an integral part of that work. I've been creating 3D models, rendered images, animations, game-ready assets and technical illustrations almost every day for the past decade.",
+    "model": "Pistosaur",
+    "diffMap": "PistosaurDiffuse",
 
     "xCoord": "1",
-    "yCoord": "10.95",
-    "zCoord": "8",
+    "yCoord": "10.9",
+    "zCoord": "13.15",
+    "rotationMultiplier": "0.35",
+    "media": [
+      "./images/projects/animation/circuits.mp4",
+      "./images/projects/animation/webux.mp4"
+    ]
+  },
+  {
+    "title": "Visualization & Animation",
+    "subtitle": "Hard surface modeling, game assets, and arch-viz",
+    "category": "",
+    "description": "I started out as an industrial designer, and representing ideas and forms accurately is an integral part of that work. I've been creating 3D models, rendered images, animations, game-ready assets and technical illustrations almost every day for the past decade.",
+    "model": "Allosaurus",
+    "diffMap": "AllosaurusDiffuse",
+
+    "xCoord": "2.4",
+    "yCoord": "10.75",
+    "zCoord": "10.86",
+    "rotationMultiplier": "0.35",
+    "media": [
+      "./images/projects/animation/circuits.mp4",
+      "./images/projects/animation/webux.mp4"
+    ]
+  },
+  {
+    "title": "Visualization & Animation",
+    "subtitle": "Hard surface modeling, game assets, and arch-viz",
+    "category": "",
+    "description": "I started out as an industrial designer, and representing ideas and forms accurately is an integral part of that work. I've been creating 3D models, rendered images, animations, game-ready assets and technical illustrations almost every day for the past decade.",
+    "model": "Brachiosaurus",
+    "diffMap": "BrachiosaurusDiffuse",
+
+    "xCoord": "1",
+    "yCoord": "10.75",
+    "zCoord": "8.65",
+    "rotationMultiplier": "0.35",
+    "media": [
+      "./images/projects/animation/circuits.mp4",
+      "./images/projects/animation/webux.mp4"
+    ]
+  },
+  {
+    "title": "Visualization & Animation",
+    "subtitle": "Hard surface modeling, game assets, and arch-viz",
+    "category": "",
+    "description": "I started out as an industrial designer, and representing ideas and forms accurately is an integral part of that work. I've been creating 3D models, rendered images, animations, game-ready assets and technical illustrations almost every day for the past decade.",
+    "model": "Dimorphodon",
+    "diffMap": "DimorphodonDiffuse",
+
+    "xCoord": "2.2",
+    "yCoord": "11",
+    "zCoord": "6.4",
+    "rotationMultiplier": "0.35",
+    "media": [
+      "./images/projects/animation/circuits.mp4",
+      "./images/projects/animation/webux.mp4"
+    ]
+  },
+  {
+    "title": "Visualization & Animation",
+    "subtitle": "Hard surface modeling, game assets, and arch-viz",
+    "category": "",
+    "description": "I started out as an industrial designer, and representing ideas and forms accurately is an integral part of that work. I've been creating 3D models, rendered images, animations, game-ready assets and technical illustrations almost every day for the past decade.",
+    "model": "Dryosauro",
+    "diffMap": "DryosauroDiffuse",
+
+    "xCoord": "1",
+    "yCoord": "10.75",
+    "zCoord": "4.3",
     "rotationMultiplier": "0.35",
     "media": [
       "./images/projects/animation/circuits.mp4",
