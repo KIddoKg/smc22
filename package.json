@@ -1,5 +1,5 @@
 {
-  "name": "smc22",
+  "name": "dinosaurmuseum",
   "version": "1.0.0",
   "description": "Studio website for 2022",
   "main": "test.js",
@@ -10,7 +10,7 @@
     "build": "webpack"
   },
   "keywords": [],
-  "author": "Steven M. Caruso Design Studio",
+  "author": "Team Computer Graphics",
   "license": "ISC",
   "devDependencies": {
     "copy-webpack-plugin": "latest",
