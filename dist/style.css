@@ -117,7 +117,7 @@ a {
 
 .splash .helptext {
   grid-column: 1 / 4;
-  grid-row: 5;
+  grid-row: 6;
   font-size: 12px;
   font-weight: 400;
   font-style: italic;
@@ -168,7 +168,7 @@ a {
 }
 
 #menulab {
-  background: rgba(0, 0, 0, 0.25);
+  background: rgba(255, 1, 1, 0.25);
 }
 
 #menuwork {
@@ -178,9 +178,7 @@ a {
 #menuabout {
   background: rgba(0, 206, 255, 0.25);
 }
-#menudone {
-  background: rgba(255, 0, 217, 0.25);
-}
+
 .projectmenu {
   z-index: 100;
   position: absolute;
@@ -403,33 +401,56 @@ a {
 }
 
 .projectinfo .innercontainer .title {
-  font-size: 36px;
+  font-size: 50px;
   font-weight: 600;
   letter-spacing: -3px;
-  line-height: 36px;
-  margin-bottom: 15px;
+  line-height: 40px;
+  margin-bottom: 20px;
 }
 
 .projectinfo .innercontainer .subtitle {
-  font-size: 18px;
+  font-size: 38px;
   font-weight: 200;
   font-style: italic;
 }
 
 .projectinfo .innercontainer .category {
-  font-size: 12px;
-  font-weight: 200;
+  font-size: 25px;
+  font-weight: 400;
 }
 
 .projectinfo .innercontainer .description {
   margin-top: 100px;
-  margin-left: 25%;
+  margin-left: 5%;
   margin-bottom: 100px;
   padding-left: 25px;
   padding-right: 25px;
   border-left-style: solid;
   border-left-color: #ffffff;
   border-left-width: 4px;
+}
+.media {
+  position: relative;
+}
+.media > img {
+  position: relative;
+  width: 960px;
+  height: 540px;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.media > video {
+  position: relative;
+  width: 960px;
+  height: 540px;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
 }
 
 .projectinfo .innercontainer .awards {

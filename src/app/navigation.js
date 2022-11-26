@@ -4,7 +4,6 @@ import App from "./app.js";
 import featuredProjects from "../featured.json";
 import labProjects from "../lab.json";
 import doneProjects from "../done.json";
-import moreProjects from "../moreprojects.json";
 
 export default class Navigation {
   constructor() {
@@ -236,10 +235,7 @@ export default class Navigation {
           this.app.camera.moveTo("main");
           return;
         }
-        if (this.intersections[0].object.name === "TextMoreProjects") {
-          this.createMoreProjects();
-          return;
-        }
+
         featuredProjects.forEach((project) => {
           if (project.model === location) {
             this.createProjectWindow(project);
@@ -367,141 +363,6 @@ export default class Navigation {
     return navTags;
   }
 
-  createMoreProjects() {
-    this.intersections.length = 0;
-    let projectIndex = 0;
-
-    let moreProjectsWindow = document.createElement("div");
-    let moreProjectsHeadline = document.createElement("div");
-    let innerContainer = document.createElement("div");
-    let projectInfoSidebar = document.createElement("div");
-    let projectTitle = document.createElement("div");
-    let projectSubtitle = document.createElement("div");
-    let projectDescription = document.createElement("div");
-    let projectAwards = document.createElement("div");
-    let projectMedia = document.createElement("div");
-    let closeButton = document.createElement("div");
-    let prevNext = document.createElement("div");
-    let previousButton = document.createElement("span");
-    let nextButton = document.createElement("span");
-
-    moreProjectsWindow.classList.add("moreprojects");
-    moreProjectsWindow.classList.add("inactive");
-    moreProjectsHeadline.classList.add("headline");
-    innerContainer.classList.add("innercontainer");
-    projectInfoSidebar.classList.add("sidebar");
-    projectTitle.classList.add("title");
-    projectSubtitle.classList.add("sub");
-    projectDescription.classList.add("description");
-    projectAwards.classList.add("awards");
-    projectMedia.classList.add("media");
-    closeButton.classList.add("closebutton");
-    prevNext.classList.add("prevnext");
-    previousButton.classList.add("previousbutton");
-    nextButton.classList.add("nextbutton");
-    closeButton.innerText = "Close";
-    previousButton.innerHTML = `<span class="arrow"><</span> Previous Project `;
-    nextButton.innerHTML = ` Next Project <span class="arrow">></span>`;
-    moreProjectsHeadline.innerText = "More Projects";
-
-    nextProject(0);
-
-    prevNext.append(previousButton, nextButton);
-    projectInfoSidebar.append(
-      projectTitle,
-      projectSubtitle,
-      projectDescription
-    );
-    innerContainer.append(projectInfoSidebar, projectMedia);
-    moreProjectsWindow.append(
-      moreProjectsHeadline,
-      innerContainer,
-      closeButton,
-      prevNext
-    );
-
-    document.body.append(moreProjectsWindow);
-    setTimeout(() => {
-      moreProjectsWindow.classList.remove("inactive");
-    }, 1);
-
-    moreProjectsWindow.addEventListener("pointermove", (event) => {
-      event.stopPropagation();
-    });
-    moreProjectsWindow.addEventListener("pointerup", (event) => {
-      event.stopPropagation();
-    });
-
-    closeButton.addEventListener("pointerup", () => {
-      moreProjectsWindow.classList.add("inactive");
-      setTimeout(() => {
-        moreProjectsWindow.remove();
-      }, 500);
-    });
-    nextButton.addEventListener("pointerup", () => {
-      nextProject(1);
-    });
-    previousButton.addEventListener("pointerup", () => {
-      nextProject(-1);
-    });
-
-    function nextProject(interval) {
-      projectIndex += interval;
-      if (projectIndex > moreProjects.length - 1) {
-        projectIndex = 0;
-      } else if (projectIndex < 0) {
-        projectIndex = moreProjects.length - 1;
-      }
-
-      projectTitle.innerText = moreProjects[projectIndex].title;
-      projectSubtitle.innerText = moreProjects[projectIndex].subtitle;
-      projectDescription.innerText = moreProjects[projectIndex].description;
-
-      projectAwards.innerHTML = "";
-
-      if (
-        moreProjects[projectIndex].awards &&
-        moreProjects[projectIndex].awards.length > 0
-      ) {
-        moreProjects[projectIndex].awards.forEach((award) => {
-          let awardItem = document.createElement("ul");
-          let awardTitle = document.createElement("li");
-          let awardCategory = document.createElement("li");
-          let awardProject = document.createElement("li");
-          let awardCredit = document.createElement("li");
-
-          awardTitle.classList.add("title");
-          awardCategory.classList.add("category");
-          awardProject.classList.add("project");
-          awardCredit.classList.add("credit");
-
-          awardTitle.innerText = `${award.status}, ${award.award}`;
-          awardCategory.innerHTML = award.category;
-          awardProject.innerHTML = award.project;
-          awardCredit.innerHTML = award.credit;
-
-          awardItem.append(
-            awardTitle,
-            awardCategory,
-            awardProject,
-            awardCredit
-          );
-          projectAwards.append(awardItem);
-        });
-
-        projectInfoSidebar.append(projectAwards);
-      }
-
-      projectMedia.innerHTML = "";
-
-      moreProjects[projectIndex].media.forEach((mediaItem) => {
-        let image = new Image();
-        image.src = mediaItem;
-        projectMedia.append(image);
-      });
-    }
-  }
-
   createProjectWindow(project) {
     let backCleanup = document.querySelectorAll(".backbutton");
     backCleanup.forEach((each) => {
@@ -516,7 +377,7 @@ export default class Navigation {
     this.app.camera.moveTo(project.model);
     gsap.to(modelRef.rotation, {
       y: Math.PI * project.rotationMultiplier,
-      duration: 2.0,
+      duration: 22.0,
       ease: "power2.inOut",
     });
 
@@ -676,16 +537,8 @@ export default class Navigation {
   }
 
   clearWindows() {
-    let moreProjectsCleanup = document.querySelectorAll(".moreprojects");
     let featuresCleanup = document.querySelectorAll(".projectinfo");
     let navCleanup = document.querySelectorAll(".projectnav");
-
-    moreProjectsCleanup.forEach((each) => {
-      each.classList.add("inactive");
-      setTimeout(() => {
-        each.remove();
-      }, 500);
-    });
 
     featuresCleanup.forEach((each) => {
       each.classList.add("inactive");

@@ -1,104 +1,101 @@
 [
   {
-    "title": "Visualization & Animation",
-    "subtitle": "Hard surface modeling, game assets, and arch-viz",
-    "category": "",
-    "description": "I started out as an industrial designer, and representing ideas and forms accurately is an integral part of that work. I've been creating 3D models, rendered images, animations, game-ready assets and technical illustrations almost every day for the past decade.",
+    "title": "Coelophysis",
+    "subtitle": "Late Triassic, 225-190 million years ago",
+    "category": "Diet: carnivore.",
+    "description": "Coelophysis is an extinct genus of coelophysid theropod dinosaur that lived approximately 228 to 201.3 million years ago during the latter part of the Triassic Period from the Carnian and Rhaetian faunal stages in what is now the southwestern United States.Coelophysis was a small, slenderly-built, ground-dwelling, bipedal carnivore that could grow up to 3 m (9.8 ft) long. It is one of the earliest known dinosaur genera. Scattered material representing similar animals has been found worldwide in some Late Triassic and Early Jurassic formations.",
     "model": "Coelophysis",
     "diffMap": "CoelophysisDiffuse",
 
     "xCoord": "2.3",
     "yCoord": "10.8",
     "zCoord": "15.3",
-    "rotationMultiplier": "0.35",
+    "rotationMultiplier": "-2",
     "media": [
-      "./images/projects/animation/circuits.mp4",
-      "./images/projects/animation/webux.mp4"
+      "./images/projectsimg/Coelophysis.png",
+      "./images/projectsimg/Coelophysis.mp4"
     ]
   },
   {
-    "title": "Visualization & Animation",
-    "subtitle": "Hard surface modeling, game assets, and arch-viz",
-    "category": "",
-    "description": "I started out as an industrial designer, and representing ideas and forms accurately is an integral part of that work. I've been creating 3D models, rendered images, animations, game-ready assets and technical illustrations almost every day for the past decade.",
+    "title": "Pistosaurus",
+    "subtitle": "During Triassic",
+    "category": "Diet: carnivore",
+    "description": "Pistosaurus is an extinct genus of aquatic sauropterygian reptile closely related to plesiosaurs. Fossils have been found in France and Germany, and date to the Middle Triassic. It contains a single species, Pistosaurus longaevus. Pistosaurus is known as the oldest 'subaquatic flying' reptile on earth.The skull of Pistosaurus generally resembles that of other Triassic sauropterygians. However, there are several synapomorphies that make Pistosaurus distinguished: the long, slender, snout; the possession of splint-like nasals that are excluded from the external naris; and the posterior extension of the premaxilla to the frontals.Based on synapomorphies such as the small nasals size and the presence of interpterygoid vacuity, Pistosaurus is more closely related to Plesiosauria than to Nothosaurus. Size is Around 3 meters long.",
     "model": "Pistosaur",
     "diffMap": "PistosaurDiffuse",
 
     "xCoord": "1",
     "yCoord": "10.9",
     "zCoord": "13.15",
-    "rotationMultiplier": "0.35",
+    "rotationMultiplier": "2",
     "media": [
-      "./images/projects/animation/circuits.mp4",
-      "./images/projects/animation/webux.mp4"
+      "./images/projectsimg/Pistosaurus.png",
+      "./images/projectsimg/Kronosaurus.mp4"
     ]
   },
   {
-    "title": "Visualization & Animation",
-    "subtitle": "Hard surface modeling, game assets, and arch-viz",
-    "category": "",
-    "description": "I started out as an industrial designer, and representing ideas and forms accurately is an integral part of that work. I've been creating 3D models, rendered images, animations, game-ready assets and technical illustrations almost every day for the past decade.",
+    "title": "Allosaurus",
+    "subtitle": "Late Jurassic, 156-144 million years ago",
+    "category": "Diet: carnivore",
+    "description": "Allosaurus is a genus of large carnosaurian theropod dinosaur that lived 155 to 145 million years ago during the Late Jurassic epoch (Kimmeridgian to late Tithonian). The first fossil remains that could definitively be ascribed to this genus were described in 1877 by paleontologist Othniel Charles Marsh. As one of the first well-known theropod dinosaurs, it has long attracted attention outside of paleontological circles.Allosaurus was a large bipedal predator. Its skull was light, robust and equipped with dozens of sharp, serrated teeth. It averaged 8.5 meters (28 ft) in length for A. fragilis, with the largest specimens estimated as being 9.7 metres (32 ft) long. Relative to the large and powerful hindlimbs, its three-fingered forelimbs were small, and the body was balanced by a long and heavily muscled tail. It is classified as an allosaurid, a type of carnosaurian theropod dinosaur.",
     "model": "Allosaurus",
     "diffMap": "AllosaurusDiffuse",
 
     "xCoord": "2.4",
     "yCoord": "10.75",
     "zCoord": "10.86",
-    "rotationMultiplier": "0.35",
+    "rotationMultiplier": "-2",
     "media": [
-      "./images/projects/animation/circuits.mp4",
-      "./images/projects/animation/webux.mp4"
+      "./images/projectsimg/Allosaurus.png",
+      "./images/projectsimg/Allosaurus.mp4"
     ]
   },
   {
-    "title": "Visualization & Animation",
-    "subtitle": "Hard surface modeling, game assets, and arch-viz",
-    "category": "",
-    "description": "I started out as an industrial designer, and representing ideas and forms accurately is an integral part of that work. I've been creating 3D models, rendered images, animations, game-ready assets and technical illustrations almost every day for the past decade.",
+    "title": "Brachiosaurus",
+    "subtitle": "Late Jurassic, 155-140 million years ago",
+    "category": "Diet: herbivorous",
+    "description": "Brachiosaurus is a genus of sauropod dinosaur that lived in North America during the Late Jurassic, about 154 to 150 million years ago. It was first described by American paleontologist Elmer S. Riggs in 1903 from fossils found in the Colorado River valley in western Colorado, United States. Brachiosaurus is estimated to have been between 18 and 22 meters (59 and 72 ft) long; body mass estimates of the subadult holotype specimen range from 28.3 to 46.9 metric tons (31.2 and 51.7 short tons). It had a disproportionately long neck, small skull, and large overall size, all of which are typical for sauropods. Atypically, Brachiosaurus had longer forelimbs than hindlimbs, which resulted in a steeply inclined trunk, and a proportionally shorter tail.The type specimen of B. altithorax is still the most complete specimen, and only a few other specimens are thought to belong to the genus, making it one of the rarer sauropods of the Morrison Formation. It is regarded as a high browser, possibly cropping or nipping vegetation as high as 9 meters (30 ft) off the ground. Unlike other sauropods, it was unsuited for rearing on its hindlimbs. It has been used as an example of a dinosaur that was most likely ectothermic because of its large size and the corresponding need for sufficient forage, but more recent research suggests it was warm-blooded. Among the most iconic and initially thought to be one of the largest dinosaurs, Brachiosaurus has appeared in popular culture, notably in the 1993 film Jurassic Park.",
     "model": "Brachiosaurus",
     "diffMap": "BrachiosaurusDiffuse",
 
     "xCoord": "1",
     "yCoord": "10.75",
     "zCoord": "8.65",
-    "rotationMultiplier": "0.35",
+    "rotationMultiplier": "-2",
     "media": [
-      "./images/projects/animation/circuits.mp4",
-      "./images/projects/animation/webux.mp4"
+      "./images/projectsimg/Brachiosaurus.png",
+      "./images/projectsimg/Brachiosaurus.mp4"
     ]
   },
   {
-    "title": "Visualization & Animation",
-    "subtitle": "Hard surface modeling, game assets, and arch-viz",
-    "category": "",
-    "description": "I started out as an industrial designer, and representing ideas and forms accurately is an integral part of that work. I've been creating 3D models, rendered images, animations, game-ready assets and technical illustrations almost every day for the past decade.",
+    "title": "Dimorphodon",
+    "subtitle": "Early Jurassic Period",
+    "category": "Diet: herbivorous",
+    "description": "The most striking features of Dimorphodon are the aforementioned jaws that are considerably deeper in height than many other pterosaurs.This gives Dimorphodon a head that resembles that of a Puffin or short billed Toucan, and has brought the suggestion that it may have been brightly coloured for the purpose of display.While no direct evidence exists for a brightly coloured head,there is no good evidence to suggest that it was a dull monotone colour or pattern either.Although the skull looks oversized it was actually very light because of the presence of large fenestra that considerably reduced the amount of solid material required to make the shape.This means that while larger,the head of Dimorphodon was no more cumbersome than a much smaller yet solid skull.They have 1.4meter wingspan and body 1meter long including the tail. The specific name of Dimorphodon (Two form tooth)is inreference to the fact that there are two sets of teeth that appear to be adapted for different uses.The teeth in the upper jaw are long,sharp and narrow,larger towards the front and reducing in size towards the back of the mouth,and were presumably so for the purpose of prey capture.The teeth in the lower jaw were considerably smaller but more numerous and may have been so for a better grip upon prey during flight. Although the skull was high,Dimorphodon is thought to wave had quite a weak bite force,although it could have had a fast jaw motion,easily being able to trap fast prey by its jaws snapping shut before prey could escape.This along with the dentition has brought the suggestion Dimorphodon was better adapted as an insectivore as opposed to the fish eating piscivore lifestyle.The fact that Dimorphodon remains have come from what are thought to have been coastal areas may in fact be misleading to its lifestyle as coasts today have birds of all different kinds flying around,yet only a few will actually venture out to sea for fish.",
     "model": "Dimorphodon",
     "diffMap": "DimorphodonDiffuse",
 
     "xCoord": "2.2",
     "yCoord": "11",
     "zCoord": "6.4",
-    "rotationMultiplier": "0.35",
-    "media": [
-      "./images/projects/animation/circuits.mp4",
-      "./images/projects/animation/webux.mp4"
-    ]
+    "rotationMultiplier": "-2",
+    "media": ["./images/projectsimg/Dimorphodon.png"]
   },
   {
-    "title": "Visualization & Animation",
-    "subtitle": "Hard surface modeling, game assets, and arch-viz",
-    "category": "",
-    "description": "I started out as an industrial designer, and representing ideas and forms accurately is an integral part of that work. I've been creating 3D models, rendered images, animations, game-ready assets and technical illustrations almost every day for the past decade.",
+    "title": "Dryosaurus",
+    "subtitle": "Late Jurassic, 155-140 million years ago",
+    "category": "Diet: herbivorous ",
+    "description": "  The maximum adult size of Dryosaurus is difficult to estimate as all of the known specimens seem to represent animals that were still growing, it's about length 2.4 - 4.3 meters long, though possibly more for large adults.. What is known is that Dryosaurus was a bipedal dinosaur of the bird hipped group. It had a light build with long legs, long neck and a stiff tail, but no known defensive features, so it probably relied upon speed and agility to escape predators.Dryosaurus earned its name from the oak shaped teeth of its mouth, a marked characteristic of herbivorous dinosaurs that fed on lush vegetation. It also featured a beak at the front of the mouth which would have been used for cropping off parts of plants. Some palaeontologists have also considered the presence of cheeks to prevent food from spilling out of the sides of its mouth. Study of Dryosaurus remains show that the skull underwent considerable change as it grew, the eyes of the smaller juveniles being proportionately larger than the larger specimens. As the animal grew, the skull would extend forwards resulting in a larger snout",
     "model": "Dryosauro",
     "diffMap": "DryosauroDiffuse",
 
     "xCoord": "1",
     "yCoord": "10.75",
     "zCoord": "4.3",
-    "rotationMultiplier": "0.35",
+    "rotationMultiplier": "2",
     "media": [
-      "./images/projects/animation/circuits.mp4",
-      "./images/projects/animation/webux.mp4"
+      "./images/projectsimg/Dryosaurus.png",
+      "./images/projectsimg/Dryosaurus.mp4"
     ]
   }
 ]

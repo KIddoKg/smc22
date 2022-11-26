@@ -401,33 +401,56 @@ a {
 }
 
 .projectinfo .innercontainer .title {
-  font-size: 36px;
+  font-size: 50px;
   font-weight: 600;
   letter-spacing: -3px;
-  line-height: 36px;
-  margin-bottom: 15px;
+  line-height: 40px;
+  margin-bottom: 20px;
 }
 
 .projectinfo .innercontainer .subtitle {
-  font-size: 18px;
+  font-size: 38px;
   font-weight: 200;
   font-style: italic;
 }
 
 .projectinfo .innercontainer .category {
-  font-size: 12px;
-  font-weight: 200;
+  font-size: 25px;
+  font-weight: 400;
 }
 
 .projectinfo .innercontainer .description {
   margin-top: 100px;
-  margin-left: 25%;
+  margin-left: 5%;
   margin-bottom: 100px;
   padding-left: 25px;
   padding-right: 25px;
   border-left-style: solid;
   border-left-color: #ffffff;
   border-left-width: 4px;
+}
+.media {
+  position: relative;
+}
+.media > img {
+  position: relative;
+  width: 960px;
+  height: 540px;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.media > video {
+  position: relative;
+  width: 960px;
+  height: 540px;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
 }
 
 .projectinfo .innercontainer .awards {

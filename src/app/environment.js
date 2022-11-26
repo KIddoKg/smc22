@@ -48,7 +48,7 @@ export default class Environment {
     pointLightB.position.set(3, 4, 3);
     pointLightC.position.set(6, 9, 1);
     pointLightD.position.set(7, 7, -5);
-    pointLightE.position.set(-3.5, 14, 8);
+    pointLightE.position.set(8, 14, 8);
 
     const HightStripLightA = new THREE.RectAreaLight(0xffffff, 5, 16, 0.15);
     HightStripLightA.position.set(-3, 13, 8);

@@ -14,10 +14,10 @@ export default class Camera {
     this.views = {
       initial: {
         x: 65,
-        y: 2,
+        y: 3,
         z: 40,
         tX: 3,
-        tY: 4,
+        tY: 5,
         tZ: 6,
         duration: 3,
         ease: "back.out(1)",
@@ -26,10 +26,10 @@ export default class Camera {
 
       main: {
         x: 65,
-        y: 2,
+        y: 3,
         z: 40,
         tX: 3,
-        tY: 4,
+        tY: 5,
         tZ: 6,
         duration: 1,
         ease: "power3.inOut",
@@ -93,7 +93,7 @@ export default class Camera {
         tZ: 1, // 0
         duration: 1,
         ease: "power3.inOut",
-        hash: "#googleassistant",
+        hash: "#saichania",
       },
 
       Spinosaurus: {
@@ -105,7 +105,7 @@ export default class Camera {
         tZ: -1.5, // trái phải
         duration: 1,
         ease: "power3.inOut",
-        hash: "#googleio",
+        hash: "#spinosaurus",
       },
 
       Parasaurolophus: {
@@ -117,7 +117,7 @@ export default class Camera {
         tZ: -3.7, // -2.5
         duration: 1,
         ease: "power3.inOut",
-        hash: "#pizzahut",
+        hash: "#parasaurolophus",
       },
 
       Velociraptor: {
@@ -129,7 +129,7 @@ export default class Camera {
         tZ: -6, // -5
         duration: 1,
         ease: "power3.inOut",
-        hash: "#usopen",
+        hash: "#velociraptor",
       },
       Giganotosaurus: {
         x: 10,
@@ -140,7 +140,7 @@ export default class Camera {
         tZ: -8.1, // -5
         duration: 1,
         ease: "power3.inOut",
-        hash: "#usopenqq",
+        hash: "#giganotosaurus",
       },
       Therizinosaurus: {
         x: 8,
@@ -151,7 +151,7 @@ export default class Camera {
         tZ: -10.4, // -5
         duration: 1,
         ease: "power3.inOut",
-        hash: "#usopen",
+        hash: "#therizinosaurus",
       },
       ///////////////////
       Kronosaurus: {
@@ -163,7 +163,7 @@ export default class Camera {
         tZ: 8.2, // 0
         duration: 1,
         ease: "power3.inOut",
-        hash: "#googleassistant",
+        hash: "#kronosaurus",
       },
 
       Mosasaurus: {
@@ -175,7 +175,7 @@ export default class Camera {
         tZ: 6, // -2.5
         duration: 1,
         ease: "power3.inOut",
-        hash: "#beagle",
+        hash: "#mosasaurus",
       },
       Baryonyx: {
         x: 10,
@@ -186,7 +186,7 @@ export default class Camera {
         tZ: 3.5, // -2.5
         duration: 1,
         ease: "power3.inOut",
-        hash: "#animation",
+        hash: "#baryonyx",
       },
 
       Pterodactyl: {
@@ -198,7 +198,7 @@ export default class Camera {
         tZ: 1, // 13
         duration: 1,
         ease: "power3.inOut",
-        hash: "#vr",
+        hash: "#pterodactyl",
       },
 
       Triceratops: {
@@ -210,7 +210,7 @@ export default class Camera {
         tZ: -1.3, // -3.5
         duration: 1,
         ease: "power3.inOut",
-        hash: "#interactive",
+        hash: "#triceratops",
       },
 
       Tyrannosaurusrex: {
@@ -222,7 +222,7 @@ export default class Camera {
         tZ: -3.5, // 13
         duration: 1,
         ease: "power3.inOut",
-        hash: "#proto",
+        hash: "#tyrannosaurusrex",
       },
       Coelophysis: {
         x: 10,
@@ -233,7 +233,7 @@ export default class Camera {
         tZ: 16.35, // 3
         duration: 1,
         ease: "power3.inOut",
-        hash: "#vintage",
+        hash: "#coelophysis",
       },
       /////
       Pistosaur: {
@@ -245,7 +245,7 @@ export default class Camera {
         tZ: 14.2, // 3
         duration: 1,
         ease: "power3.inOut",
-        hash: "#vintage",
+        hash: "#pistosaur",
       },
 
       Allosaurus: {
@@ -257,7 +257,7 @@ export default class Camera {
         tZ: 12.2, // 3
         duration: 1,
         ease: "power3.inOut",
-        hash: "#vintage",
+        hash: "#allosaurus",
       },
 
       Brachiosaurus: {
@@ -269,7 +269,7 @@ export default class Camera {
         tZ: 9.6, // 3
         duration: 1,
         ease: "power3.inOut",
-        hash: "#vintage",
+        hash: "#brachiosaurus",
       },
 
       Dimorphodon: {
@@ -281,7 +281,7 @@ export default class Camera {
         tZ: 7.4, // 3
         duration: 1,
         ease: "power3.inOut",
-        hash: "#vintage",
+        hash: "#dimorphodon",
       },
       Dryosauro: {
         x: 8,
@@ -292,7 +292,7 @@ export default class Camera {
         tZ: 5.2, // 3
         duration: 1,
         ease: "power3.inOut",
-        hash: "#vintage",
+        hash: "#dryosauro",
       },
     }; // views lib
   }

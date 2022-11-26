@@ -1,17 +1,12 @@
 import App from "./app/app.js";
 import featuredProjects from "./featured.json";
-import moreProjects from "./moreprojects.json";
 
 // parse project JSON into HTML for SEO:
 
 const featuredProjectSection = document.querySelector(".featuredprojectstxt");
-const moreProjectsSection = document.querySelector(".moreprojectstxt");
 
 featuredProjects.forEach(function (each) {
   PopulateProjetText(each, featuredProjectSection);
-});
-moreProjects.forEach(function (each) {
-  PopulateProjetText(each, moreProjectsSection);
 });
 
 // Instantiate 3D application

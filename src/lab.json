@@ -1,88 +1,98 @@
 [
   {
-    "title": "Virtual Reality",
-    "subtitle": "Mobile / Standalone, PC-based, and AR",
-    "description": "VR has been a part of my design workflow for years. As a visualization tool, it's been valuable for seeing objects and environments at their real scale while still existing only in a digital form. While the technology is still in a formative state, the graphical fidelity and accessibility of available hardware has made enormous progress in just the past few years. Simpler devices like the Meta Quest 2 prove that wide adoption of XR will be dependent on a great end-to-end UX. In my opinion, designers and developers haven't yet been able to justify putting on the headset to most casual users, and I'm continually experimenting and prototyping to try and find a great use of the technology. WebXR, Meta's App Lab, and AR on iOS are my preferred tools.",
-    "category": "",
+    "title": "Kronosaurus",
+    "subtitle": "Early Cretaceous, 155-140 million years ago",
+    "category": "Diet: carnivorous",
+    "description": "  Kronosaurus with an estimated length of 9 to 10.9 meters (30 to 36 ft) is one of the more famous fossil discoveries to come from Australia,and as a huge short-necked pliosaur, Kronosaurus would have been an apex predator of the waters it swam in.The teeth of Kronosaurus are conical and up to thirty centimetres long although most of that was root with up to twelve centimetres making up the exposed crown.Interestingly the teeth of Kronosaurus are quite different to other pliosaurs in that they are not serrated and do not have three facets. The teeth may suggest that despite its large size Kronosaurus may have seized smaller to medium sized prey which could then be manipulated to be swallowed.The only way that Kronosaurus could have fed from larger prey would be to clamp on with its jaws and then use brute strength from its body to tear off a chunk of flesh by twisting or rolling. Either way it seems that Kronosaurus may have eaten in a similar manner to a crocodile.",
     "model": "Kronosaurus",
     "diffMap": "KronosaurusDiffuse",
-    "roughMap": "HeadsetRough",
-    "normalMap": "HeadsetNormal",
     "xCoord": "2",
     "yCoord": "6.5",
     "zCoord": "6.9",
-    "rotationMultiplier": "1.15",
+    "rotationMultiplier": "-2",
     "media": [
-      "./images/projects/vr/vrdemo.mp4",
-      "./images/projects/vr/vrsitetest.mp4"
+      "./images/projectsimg/Kronosaurus.png",
+      "./images/projectsimg/Kronosaurus.mp4"
     ]
   },
   {
-    "title": "Interactive 3D",
-    "subtitle": "WebGL, RealityKit and Unreal Engine",
-    "category": "",
-    "description": "As seen here on this site, interactive 3D environments are a fun and immersive way to experience non-linear information, akin to a thoughtfully designed exhibit or showroom. In addition to some of the projects shown in the lower gallery, my experiments include complex realtime 3D applications streamed from remote rendering servers, mobile apps and games, and other immersive 3D websites.",
+    "title": "Mosasaurus",
+    "subtitle": "Early Cretaceous, 100-80 million years ago",
+    "category": "Diet: carnivorous",
+    "description": "Mosasaurus is the type genus of the mosasaurs, an extinct group of aquatic squamate reptiles. It lived from about 82 to 66 million years ago . The earliest fossils of Mosasaurus known to science were found as skulls in a chalk quarry near the Dutch city of Maastricht in the late 18th century, which were initially thought to have been the bones of crocodiles or whales. Traditional interpretations have estimated the maximum length of the largest species, M. hoffmannii, to be up to 17.1 meters (56 ft), making it one of the largest mosasaurs, although some scientists consider this an overestimation with recent estimates suggesting a length closer to 13 meters (43 ft). The skull of Mosasaurus was equipped with robust jaws capable of swinging back and forth and strong muscles capable of powerful bites using dozens of large teeth adapted for cutting prey. Its four limbs were shaped into robust paddles to steer the animal underwater. Its tail was long and ended in a downward bend and a paddle-like fluke. Mosasaurus was a predator possessing excellent vision to compensate for its poor sense of smell, and a high metabolic rate suggesting it was endothermic ('warm-blooded'), an adaptation only found in mosasaurs among squamates. Fossil evidence suggests Mosasaurus inhabited much of the Atlantic Ocean and the seaways adjacent to it. Mosasaurus fossils have been found in places as diverse as North and South America, Europe, Africa, Western Asia, and Antarctica. This distribution encompassed a wide range of oceanic climates including tropical, subtropical, temperate, and subpolar climates. Mosasaurus was a common large predator in these oceans and was positioned at the top of the food chain. Paleontologists believe its diet would have included virtually any animal; it likely preyed on bony fish, sharks, cephalopods, birds, and other marine reptiles including sea turtles and other mosasaurs. It likely preferred to hunt in open water near the surface. From an ecological standpoint, Mosasaurus probably had a profound impact on the structuring of marine ecosystems; its arrival in some locations such as the Western Interior Seaway in North America coincides with a complete turnover of faunal assemblages and diversity. Mosasaurus faced competition with other large predatory mosasaurs such as Prognathodon and Tylosaurus—which were known to feed on similar prey—though they were able to coexist in the same ecosystems through niche partitioning. There were still conflicts among them, as an instance of Tylosaurus attacking a Mosasaurus has been documented. Several fossils document deliberate attacks on Mosasaurus individuals by members of the same species. In fighting likely took place in the form of snout grappling, similarly seen in modern crocodiles today.",
     "model": "Mosasaurus",
     "diffMap": "MosasaurusDiffuse",
     "xCoord": "0",
     "yCoord": "6.5",
     "zCoord": "4.8",
-    "rotationMultiplier": "0.15",
-    "media": ["./images/projects/interactive/portfolio.jpg"]
+    "rotationMultiplier": "-2",
+    "media": [
+      "./images/projectsimg/Mosasaurus.png",
+      "./images/projectsimg/Mosasaurus.mp4"
+    ]
   },
   {
-    "title": "Visualization & Animation",
-    "subtitle": "Hard surface modeling, game assets, and arch-viz",
-    "category": "",
-    "description": "I started out as an industrial designer, and representing ideas and forms accurately is an integral part of that work. I've been creating 3D models, rendered images, animations, game-ready assets and technical illustrations almost every day for the past decade.",
+    "title": "Baryonyx",
+    "subtitle": "Early Cretaceous, 125 million years ago",
+    "category": "Diet: carnivore.",
+    "description": "Baryonyx is a genus of theropod dinosaur which lived in the Barremian stage of the Early Cretaceous period, about 130-125 million years ago. The first skeleton was discovered in 1983 in the Smokejack Clay Pit, of Surrey, England, in sediments of the Weald Clay Formation. The holotype specimen, which may not have been fully grown, was estimated to have been between 7.5 and 10 metres (25 and 33 feet) long and to have weighed between 1.2 and 2 metric tons (1.3 and 2.2 short tons; 1.2 and 2.0 long tons). Baryonyx had a long, low, and narrow snout, which has been compared to that of a gharial. The tip of the snout expanded to the sides in the shape of a rosette. Behind this, the upper jaw had a notch which fitted into the lower jaw (which curved upwards in the same area). It had a triangular crest on the top of its nasal bones. Baryonyx had a large number of finely serrated, conical teeth, with the largest teeth in front. The neck formed an S-shape, and the neural spines of its dorsal vertebrae increased in height from front to back. One elongated neural spine indicates it may have had a hump or ridge along the centre of its back. It had robust forelimbs, with the eponymous first-finger claw measuring about 31 centimetres (12 inches) long. Baryonyx was the first theropod dinosaur demonstrated to have been piscivorous (fish-eating), as evidenced by fish scales in the stomach region of the holotype specimen. It may also have been an active predator of larger prey and a scavenger, since it also contained bones of a juvenile iguanodontid. The creature would have caught and processed its prey primarily with its forelimbs and large claws. Baryonyx may have had semiaquatic habits, and coexisted with other theropod, ornithopod, and sauropod dinosaurs, as well as pterosaurs, crocodiles, turtles and fishes, in a fluvial environment.",
     "model": "Baryonyx",
     "diffMap": "BaryonyxDiffuse",
     "xCoord": "2.4",
     "yCoord": "6.38",
     "zCoord": "2.3",
-    "rotationMultiplier": "0.35",
+    "rotationMultiplier": "2",
     "media": [
-      "./images/projects/animation/circuits.mp4",
-      "./images/projects/animation/webux.mp4"
+      "./images/projectsimg/Baryonyx.png",
+      "./images/projectsimg/Baryonyx.mp4"
     ]
   },
   {
-    "title": "Prototyping",
-    "subtitle": "3D Printing and Microcontrollers",
-    "category": "",
-    "description": "One of my favorite things about living in the 21st century is the ability to manufacture functional objects from machines and tools right here in my studio. Combining 3D printed parts with Arduino or Raspberry Pi controllers and electronic bits from my local Micro Center is my favorite way to get something off the screen and into reality.",
+    "title": "Pterodactyl",
+    "subtitle": "Early Cretaceous, 140 million years ago",
+    "category": "Diet: carnivore.",
+    "description": "Pterodactylus is an extinct genus of pterosaurs. It is thought to contain only a single species, Pterodactylus antiquus, which was the first pterosaur to be named and identified as a flying reptile. Fossil remains of Pterodactylus have primarily been found in the Solnhofen limestone of Bavaria, Germany, which dates from the Late Jurassic period (early Tithonian stage), about 150.8 to 148.5 million years ago. More fragmentary remains of Pterodactylus have tentatively been identified from elsewhere in Europe and in Africa.Pterodactylus was a generalist carnivore that probably fed on a variety of invertebrates and vertebrates. Like all pterosaurs, Pterodactylus had wings formed by a skin and muscle membrane stretching from its elongated fourth finger to its hind limbs. It was supported internally by collagen fibres and externally by keratinous ridges and 4.26 meter wingspan. ",
     "model": "Pterodactyl",
     "diffMap": "PterodactylDiffuse",
     "xCoord": "1",
     "yCoord": "6.5",
     "zCoord": "0.1",
-    "rotationMultiplier": "0.35",
-    "media": ["./images/projects/proto/coaster.mp4"]
+    "rotationMultiplier": "2",
+    "media": [
+      "./images/projectsimg/Pterodactyl.png",
+      "./images/projectsimg/Pterodactyl.mp4"
+    ]
   },
   {
-    "title": "Vintage & Restoration",
-    "subtitle": "",
-    "category": "",
-    "description": "No, I don't know what I'm going to do with all these.",
+    "title": "Triceratops",
+    "subtitle": "Late Cretaceous, 68-66 million years ago",
+    "category": "Diet: herbivorous",
+    "description": "Triceratops is a genus of herbivorous chasmosaurine ceratopsid dinosaur that first appeared during the late Maastrichtian stage of the Late Cretaceous period, about 68 million years ago in what is now North America. It is one of the last-known non-avian dinosaur genera, and became extinct in the Cretaceous–Paleogene extinction event 66 million years ago. Bearing a large bony frill, three horns on the skull, and a large four-legged body, exhibiting convergent evolution with rhinoceroses and bovines, Triceratops is one of the most recognizable of all dinosaurs and the most well-known ceratopsid. It was also one of the largest, up to 8–9 metres (26–30 ft) long and 5–9 metric tons (5.5–9.9 short tons) in body mass. It shared the landscape with and was most likely preyed upon by Tyrannosaurus, though it is less certain that two adults did battle in the fanciful manner often depicted in museum displays and popular images. The functions of the frills and three distinctive facial horns on its head have long inspired debate. Traditionally, these have been viewed as defensive weapons against predators. More recent interpretations find it probable that these features were primarily used in species identification, courtship, and dominance display, much like the antlers and horns of modern ungulates.",
     "model": "Triceratops",
     "diffMap": "TriceratopsDiffuse",
     "xCoord": "2.4",
     "yCoord": "6.38",
     "zCoord": "-2.3",
-    "rotationMultiplier": "0.75",
-    "media": ["./images/projects/mac/tower.jpg"]
+    "rotationMultiplier": "-2",
+    "media": [
+      "./images/projectsimg/Triceratops.png",
+      "./images/projectsimg/Tyrannosaurusvsriceratops.mp4"
+    ]
   },
   {
-    "title": "Vintage & Restoration",
-    "subtitle": "",
-    "category": "",
-    "description": "No, I don't know what I'm going to do with all these.",
+    "title": "T-Red",
+    "subtitle": "Late Cretaceous, 68-66 million years ago",
+    "category": "Diet: carnivore.",
+    "description": "Tyrannosaurus is a genus of large theropod dinosaur. The species Tyrannosaurus rex (rex meaning 'king' in Latin), often called T. rex or colloquially T-Rex, is one of the best represented theropods. Tyrannosaurus lived throughout what is now western North America, on what was then an island continent known as Laramidia. Tyrannosaurus had a much wider range than other tyrannosaurids. Fossils are found in a variety of rock formations dating to the Maastrichtian age of the Upper Cretaceous period, 68 to 66 million years ago. It was the last known member of the tyrannosaurids and among the last non-avian dinosaurs to exist before the Cretaceous–Paleogene extinction event. Like other tyrannosaurids, Tyrannosaurus was a bipedal carnivore with a massive skull balanced by a long, heavy tail. Relative to its large and powerful hind limbs, the forelimbs of Tyrannosaurus were short but unusually powerful for their size, and they had two clawed digits. The most complete specimen measures up to 12.3–12.4 m (40.4–40.7 ft) in length; however, according to most modern estimates, T. rex could grow to lengths of over 12.4 m (40.7 ft), up to 3.66–3.96 m (12–13 ft) tall at the hips, and 8.87 metric tons (9.78 short tons) in body mass.[2] Although other theropods rivaled or exceeded Tyrannosaurus rex in size, it is still among the largest known land predators and is estimated to have exerted the strongest bite force among all terrestrial animals. By far the largest carnivore in its environment, Tyrannosaurus rex was most likely an apex predator, preying upon hadrosaurs, juvenile armored herbivores like ceratopsians and ankylosaurs, and possibly sauropods. Some experts have suggested the dinosaur was primarily a scavenger.",
     "model": "Tyrannosaurusrex",
     "diffMap": "TyrannosaurusrexDiffuse",
     "xCoord": "1",
     "yCoord": "6.38",
     "zCoord": "-4.34",
-    "rotationMultiplier": "0.75",
-    "media": ["./images/projects/mac/tower.jpg"]
+    "rotationMultiplier": "-2",
+    "media": [
+      "./images/projectsimg/Tyrannosaurus.png",
+      "./images/projectsimg/Tyrannosaurus.mp4"
+    ]
   }
 ]
